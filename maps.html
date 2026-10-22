@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gladiator Catalog | รายชื่อนักสู้โรมัน</title>
+  
+  <!-- Google Fonts: Bai Jamjuree & Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Flaticon Uicons Regular Rounded -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/maps.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-wrapper">
+        <img src="Logo.png" alt="Gladiator Combat Museum Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">Gladiator</span>
+          <span class="brand-sub">Combat Archives</span>
+        </div>
+      </a>
+
+      <!-- Search Box (Direct Name or Keyword) -->
+      <div class="header-search">
+        <form class="header-search-form" action="gladiators.html" method="GET">
+          <input type="text" name="search" placeholder="ค้นหาชื่อนักสู้ หรือคีย์เวิร์ด..." autocomplete="off">
+          <button type="submit" class="header-search-btn" title="ค้นหา">
+            <i class="fi fi-rr-search"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Main Navigation Menu -->
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="knowledge-graph.html" class="nav-link">Knowledge Graph</a>
+        <a href="gladiators.html" class="nav-link">Gladiator</a>
+        <a href="maps.html" class="nav-link active">Ancient Map</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <i class="fi fi-rr-menu-burger"></i>
+      </button>
+    </div>
+  </header>
+
+    <!-- ================= ส่วนที่ 1: แผนที่โบราณ ================= -->
+  <section class="archive-header-section">
+    <div class="container">
+      <div class="museum-label">HISTORICAL GEOGRAPHY</div>
+      <h1 class="section-title">แผนที่อาณาจักรโบราณ</h1>
+      <p class="section-subtitle">
+        ภาพแผนที่แสดงอาณาเขตและขอบเขตดินแดนของอารยธรรมโบราณในยุคจักรวรรดิโรมัน
+      </p>
+    </div>
+
+    <!-- พื้นที่เว้นไว้ใส่รูปแผนที่โบราณ -->
+    <div class="map-page-container">
+        <div class="map-placeholder">
+            <img src="ภาพประกอบ/maps.jpg" alt="แผนที่โบราณ">
+        </div>
+        <p>
+            <b>โรม (Rome)</b> <br>
+            ที่มา: เติบโตจากนครรัฐเล็กๆ ในคาบสมุทรอิตาลี ขยายอำนาจผ่านการทำสงครามและการเมือง จนกลายเป็นสาธารณรัฐและจักรวรรดิอันยิ่งใหญ่ที่ครอบคลุมพื้นที่รอบทะเลเมดิเตอร์เรเนียน <br>
+            การล่มสลาย: ประสบปัญหาภายใน ทั้งความขัดแย้งทางการเมือง วิกฤตเศรษฐกิจ และการคอรัปชัน ประกอบกับการรุกรานจากชนเผ่าเยอรมัน (Barbarian Invasions) ทำให้จักรวรรดิโรมันตะวันตกแตกสลายลงในปี ค.ศ. 476 <br>
+            <br>
+            <b>นูมิเดีย (Numidia)</b> <br>
+            ที่มา: อาณาจักรโบราณของชนเผ่าเบอร์เบอร์ในแอฟริกาเหนือ (ปัจจุบันคือแอลจีเรียและตูนิเซีย) มีบทบาทสำคัญและสลับข้างเป็นทั้งพันธมิตรและศัตรูกับโรมในช่วงสงครามพิวนิก <br>
+            การล่มสลาย: พ่ายแพ้และสูญเสียเอกราชให้แก่โรม หลังจากจูเลียส ซีซาร์ ยกทัพเข้าแทรกแซงและผนวกรวมดินแดนเข้าเป็นมณฑลของโรมัน (Africa Nova) ในปี 46 ก่อนคริสตกาล <br>
+            <br>
+            <b>กรีซ (Greece)</b> <br>
+            ที่มา: จุดกำเนิดอารยธรรมตะวันตกที่ประกอบด้วยนครรัฐอิสระ เช่น เอเธนส์และสปาร์ตาร์ โดดเด่นด้านปรัชญา ประชาธิปไตย และศิลปวัฒนธรรม <br>
+            การล่มสลาย: แม้จะมีอารยธรรมที่รุ่งเรือง แต่ความขัดแย้งและสงครามระหว่างนครรัฐทำให้ประเทศอ่อนแอลง จนกระทั่งถูกกองทัพมาเกโดเนียครอบงำ และต่อมาถูกกองทัพโรมันพิชิตและผนวกเป็นมณฑล Achaea ในปี 146 ก่อนคริสตกาล <br>
+            <br>
+            <b>เยอร์มาเนีย (Germania)</b> <br>
+            ที่มา: ดินแดนของชนเผ่าเยอรมันหลายเผ่าที่อาศัยอยู่ทางตอนกลางและตะวันออกของยุโรป ขึ้นชื่อเรื่องความเป็นนักรบและต้านทานการขยายอำนาจของโรมาอย่างดุเดือด <br>
+            การล่มสลาย: ไม่ได้ล่มสลายในลักษณะของอาณาจักรเดี่ยวเนื่องจากเป็นดินแดนของกลุ่มชนเผ่าอิสระ แต่ต่อมาดินแดนเหล่านี้ค่อยๆ ถูกกลืนเข้าสู่เส้นทางประวัติศาสตร์ยุคกลาง ผ่านการอพยพย้ายถิ่น และการปะทะสังสรรค์ทางวัฒนธรรมกับอาณาจักรโรมันจนเกิดเป็นอาณาจักรใหม่ๆ ในยุโรป <br>
+            <br>
+            <b>โกล (Gaul)</b>: <br>
+            ที่มา: ดินแดนของชาวเซลติก (ฝรั่งเศสและเบลเยียมในปัจจุบัน) ที่มีความอุดมสมบูรณ์และมีวัฒนธรรมเผ่าที่เข้มแข็ง <br>
+            การล่มสลาย: ถูกจูเลียส ซีซาร์ นำทัพเข้าโจมตีและพิชิตได้เบ็ดเสร็จในสงครามกอลลิก ส่งผลให้ดินแดนโกลสูญเสียเอกราชและถูกผนวกเป็นมณฑลสำคัญของจักรวรรดิโรมันในปี 51 ก่อนคริสตกาล <br>
+            <br>
+            <b>เธรซ (Thrace)</b> <br>
+            ที่มา: ภูมิภาคโบราณทางตะวันออกเฉียงใต้ของคาบสมุทรบอลข่าน ผู้คนเชี่ยวชาญการรบ และมีอารยธรรมที่โดดเด่นเรื่องศิลปะการหล่อทองคำ <br>
+            การล่มสลาย: ถูกคุกคามและตกอยู่ภายใต้อิทธิพลของอาณาจักรที่ใหญ่กว่าอย่างมาเกโดเนียและโรมตามลำดับ จนกระทั่งสูญเสียอำนาจปกครองตนเองอย่างสมบูรณ์และถูกผนวกเป็นมณฑลของโรมันใน ค.ศ. 46
+        </p>
+    </div>
+
+  </section>    
+  
+
+    <!-- ================= ส่วนที่ 2: แผนที่ปัจจุบัน (2 คอลัมน์) ================= -->
+    <section class="graph-page-header" style="padding: 0 0 60px 0;">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 20px;">แผนที่ปัจจุบัน</h2>
+      <p class="section-subtitle" >
+        เลือกเมืองที่ต้องการดูแผนที่ปัจจุบันและคำอธิบายเกี่ยวกับเมืองนั้น ๆ 
+      </p>
+
+      <div class="modern-map-grid">
+        <!-- ฝั่งซ้าย: แผนที่ + ปุ่มเลือกเมือง -->
+        <div class="left-map-area">
+          <div class="map-frame-wrapper" id="mapDisplayContainer">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.1230741800646!2d12.48965597608522!3d41.890210171240334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sThe%20Colosseum!5e0!3m2!1sth!2sth!4v1792650020396!5m2!1sth!2sth" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+
+          <div class="city-buttons">
+            <button class="city-btn active" onclick="switchCity('rome', this)">Rome (โรม)</button>
+            <button class="city-btn" onclick="switchCity('numidia', this)">Numidia (นูมิเดีย)</button>
+            <button class="city-btn" onclick="switchCity('greece', this)">Greece (กรีซ)</button>
+            <button class="city-btn" onclick="switchCity('germania', this)">Germania (เจอร์มาเนีย)</button>
+            <button class="city-btn" onclick="switchCity('gaul', this)">Gaul (โกล)</button>
+            <button class="city-btn" onclick="switchCity('thrace', this)">Thrace (เธรซ)</button>
+          </div>
+        </div>
+
+        <!-- ฝั่งขวา: คำอธิบายปัจจุบัน -->
+        <div class="right-desc-area description-box" id="descContainer">
+          <h3>Rome (กรุงโรม)</h3>
+          <div class="info-group">
+            <div class="info-label">ประเทศในปัจจุบัน:</div>
+            <div class="info-text">ประเทศอิตาลี (Italy)</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">สภาพพื้นที่และสถานที่สำคัญปัจจุบัน:</div>
+            <div class="info-text">ปัจจุบันคือกรุงโรม เมืองหลวงของประเทศอิตาลี เต็มไปด้วยโบราณสถานระดับโลก เช่น โคลอสเซียม (Colosseum) สนามกีฬาอัฒจันทร์โบราณขนาดใหญ่ที่สุดในโลก สัญลักษณ์แห่งความยิ่งใหญ่ของจักรวรรดิโรมัน ใช้สำหรับจัดการแข่งขันกลาดิเอเตอร์และการแสดงในอดีต, โรมันฟอรัม (Roman Forum) ศูนย์กลางทางการเมือง ศาสนา และเศรษฐกิจของโรมโบราณ เต็มไปด้วยซากปรักหักพังของวิหารและอาคารราชการสำคัญ</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">ความสำคัญทางประวัติศาสตร์:</div>
+            <div class="info-text">ศูนย์กลางอำนาจหลักของจักรวรรดิโรมัน เป็นจุดกำเนิดของกฎหมาย วัฒนธรรม และโครงสร้างการปกครองที่ทรงอิทธิพลที่สุดในประวัติศาสตร์ตะวันตก</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-wrapper">
+            <img src="Logo.png" alt="Gladiator Combat Museum Logo" class="brand-logo">
+            <div class="brand-text">
+              <span class="brand-title">Gladiator</span>
+              <span class="brand-sub">Combat Archives</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            เว็บไซต์ Gladiator Combat Archives พัฒนาโดยนิสิตสารสนเทศศึกษา เพื่อรวบรวมบันทึกการประลองโรมันและสร้างกราฟความรู้เชื่อมโยงข้อมูลนักสู้เพื่อการศึกษา
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" title="Instagram"><i class="fi fi-rr-camera"></i></a>
+            <a href="#" class="social-icon" title="Twitter"><i class="fi fi-rr-comment-alt"></i></a>
+            <a href="#" class="social-icon" title="GitHub"><i class="fi fi-rr-code-fork"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-heading">เมนูเว็บไซต์</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fi fi-rr-home"></i> หน้าแรก (Home)</a></li>
+            <li><a href="knowledge-graph.html"><i class="fi fi-rr-network"></i> โครงข่ายความรู้ (Graph)</a></li>
+            <li><a href="gladiators.html"><i class="fi fi-rr-users"></i> รายชื่อนักสู้ (Gladiator)</a></li>
+            <li><a href="maps.html"><i class="fi fi-rr-map"></i> แผนที่โบราณ (Ancient Map)</a></li>
+            <li><a href="about.html"><i class="fi fi-rr-info"></i> เกี่ยวกับเรา (About)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-analytics">
+          <h4 class="footer-heading">หมวดสถิติ</h4>
+          <ul class="footer-links">
+            <li><a href="gladiators.html?sort=wins-desc">ทำเนียบชัยชนะ</a></li>
+            <li><a href="gladiators.html?category=Provocator">สาย Provocator</a></li>
+            <li><a href="gladiators.html?category=Retiarius">สาย Retiarius</a></li>
+            <li><a href="gladiators.html?origin=Rome">นักสู้แห่งกรุงโรม</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-heading">ช่องทางการติดต่อ</h4>
+          <ul class="contact-info">
+            <li class="contact-item">
+              <i class="fi fi-rr-marker"></i>
+              <span>169 ถนนลงหาดบางแสน ตำบลแสนสุข อำเภอเมือง จังหวัดชลบุรี 20131</span>
+            </li>
+            <li class="contact-item">
+              <i class="fi fi-rr-envelope"></i>
+              <span>curator@gladiator-combat-museum.org</span>
+            </li>
+            <li class="contact-item">
+              <i class="fi fi-rr-phone-call"></i>
+              <span>+39 06 3996 7700 (Museum Archives)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Gladiator Combat Archives & Digital Museum. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript ควบคุมการสลับแผนที่และคำอธิบาย -->
+  <script src="js/maps.js"></script>
+
+</body>
+</html>

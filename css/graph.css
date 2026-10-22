@@ -1,0 +1,274 @@
+/* ==========================================================================
+   KNOWLEDGE GRAPH PAGE STYLES - NEO4J INTERACTIVE VISUALIZATION
+   ========================================================================== */
+
+.graph-page-header {
+  padding: 4rem 0 2rem;
+  background: var(--bg-primary);
+}
+
+.cypher-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  background: var(--color-272727);
+  border: 1px solid var(--border-stat);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  color: var(--accent-white);
+  margin-top: 1rem;
+}
+
+.cypher-badge i {
+  color: var(--text-secondary);
+}
+
+/* Neo4j Connection Bar */
+.neo4j-status-bar {
+  background: var(--bg-card);
+  border: 2px solid var(--border-stat);
+  border-radius: var(--radius-sm);
+  padding: 1.2rem 1.6rem;
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  box-shadow: var(--shadow-stat-card);
+  transition: border-color var(--btn-transition), box-shadow var(--btn-transition);
+}
+
+.neo4j-status-bar:hover {
+  border-color: var(--border-stat-hover);
+}
+
+.connection-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.param-pill {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.param-pill code {
+  color: var(--accent-white);
+  background: #2e4053;
+  padding: 0.15rem 0.4rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.76rem;
+}
+
+.neo4j-actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+/* Graph Visualization Area */
+.graph-viewport-container {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 1.5rem;
+  margin: 2.5rem 0 5rem;
+  height: 680px;
+}
+
+.graph-canvas-frame {
+  position: relative;
+  background: var(--bg-card);
+  border: 2px solid var(--border-stat);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-stat-card);
+  height: 100%;
+  transition: border-color var(--btn-transition), box-shadow var(--btn-transition);
+}
+
+.graph-canvas-frame:hover {
+  border-color: var(--border-stat-hover);
+}
+
+#network-container {
+  width: 100%;
+  height: 100%;
+  background: var(--color-272727);
+}
+
+/* Floating Controls inside Graph Canvas */
+.canvas-controls-overlay {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  z-index: 10;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.graph-legend-overlay {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  z-index: 10;
+  background: rgba(39, 39, 39, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1.5px solid var(--border-stat);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+}
+
+.legend-color-box {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+/* Side Inspector Panel */
+.graph-inspector-panel {
+  background: var(--bg-card);
+  border: 2px solid var(--border-stat);
+  border-radius: var(--radius-sm);
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: var(--shadow-stat-card);
+  transition: border-color var(--btn-transition), box-shadow var(--btn-transition);
+}
+
+.graph-inspector-panel:hover {
+  border-color: var(--border-stat-hover);
+}
+
+.inspector-header {
+  border-bottom: 2px solid var(--border-stat);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.inspector-header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent-white);
+  margin-bottom: 0.3rem;
+}
+
+.inspector-header p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.inspector-content {
+  flex: 1;
+}
+
+.inspector-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+}
+
+.inspector-empty i {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  opacity: 0.4;
+}
+
+.node-prop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.node-prop-item {
+  background: var(--color-272727);
+  border: 1px solid var(--color-535353);
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius-sm);
+  transition: border-color var(--btn-transition);
+}
+
+.node-prop-item:hover {
+  border-color: var(--border-stat);
+}
+
+.node-prop-key {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.2rem;
+}
+
+.node-prop-value {
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  word-break: break-all;
+}
+
+/* Python / Neo4j Code Snippet Modal or Tab */
+.code-preview-box {
+  background: var(--color-1a1a1a);
+  border: 1px solid var(--color-535353);
+  border-radius: var(--radius-sm);
+  padding: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  overflow-x: auto;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .graph-viewport-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .graph-canvas-frame {
+    height: 520px;
+  }
+  
+  .graph-inspector-panel {
+    height: auto;
+  }
+}

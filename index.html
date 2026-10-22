@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gladiator Combat | Roman Archives & Data Analytics Museum</title>
+  
+  <!-- Google Fonts: Bai Jamjuree & Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Flaticon Uicons Regular Rounded -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Stylesheets (Separated CSS Files) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER / NAVIGATOR ================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-wrapper">
+        <img src="Logo.png" alt="Gladiator Combat Museum Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">Gladiator</span>
+          <span class="brand-sub">Combat Archives</span>
+        </div>
+      </a>
+
+      <!-- Search Box (Direct Name or Keyword) -->
+      <div class="header-search">
+        <form class="header-search-form" action="gladiators.html" method="GET">
+          <input type="text" name="search" placeholder="ค้นหาชื่อนักสู้ หรือคีย์เวิร์ด..." autocomplete="off">
+          <button type="submit" class="header-search-btn" title="ค้นหา">
+            <i class="fi fi-rr-search"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Main Navigation Menu -->
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="knowledge-graph.html" class="nav-link">Knowledge Graph</a>
+        <a href="gladiators.html" class="nav-link">Gladiator</a>
+        <a href="maps.html" class="nav-link">Ancient Map</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <i class="fi fi-rr-menu-burger"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO & INTRODUCTION SECTION ================= -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fi fi-rr-bank"></i>
+          <span>Modern Roman Heritage Exhibition</span>
+        </div>
+        <h1 class="hero-title">
+          Gladiator Combat
+          <span>ประวัติศาสตร์และสถิติสังเวียนเลือดแห่งจักรวรรดิโรมัน</span>
+        </h1>
+        <p class="hero-desc">
+          ย้อนรอยสู่ประวัติศาสตร์แห่งเกียรติยศ ความกล้าหาญ และการต่อสู้เพื่ออิสรภาพ สำรวจฐานข้อมูลเชิงลึกของนักสู้โรมันกว่า 9,900 คน ผ่านนิทรรศการดิจิทัลและกราฟความสัมพันธ์
+        </p>
+        <div class="hero-actions">
+          <a href="gladiators.html" class="btn btn-primary">
+            สำรวจรายชื่อนักสู้ทั้งหมด <i class="fi fi-rr-arrow-right"></i>
+          </a>
+          <a href="knowledge-graph.html" class="btn btn-secondary">
+            โครงข่ายความรู้ Knowledge Graph <i class="fi fi-rr-network"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80" alt="Roman Colosseum Amphitheatre">
+          <div class="hero-caption">
+            <div>
+              <strong>Flavian Amphitheatre (Colosseum)</strong>
+              <div style="font-size: 0.72rem; color: #888;">Roma, Italia • ศูนย์กลางแห่งมหากาพย์การประลอง</div>
+            </div>
+            <span class="badge-tag">CIRCA 80 AD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HISTORY OF ROMAN GLADIATORS ================= -->
+  <section class="history-section">
+    <div class="container">
+      <div class="museum-label">HISTORICAL CHRONICLE</div>
+      <h2 class="section-title">ความเป็นมาของนักสู้โรมัน (The Roman Gladiators)</h2>
+      <p class="section-subtitle">
+        จากพิธีกรรมงานศพโบราณของชนเผ่าอีทรัสคัน สู่วัฒนธรรมความบันเทิงและสัญลักษณ์แห่งอำนาจของจักรวรรดิโรมันอันยิ่งใหญ่
+      </p>
+
+      <div class="history-grid">
+        <div class="history-content">
+          <p class="history-paragraph">
+            คำว่า <strong>"Gladiator"</strong> มาจากคำว่า gladiatores ในภาษาละติน ซึ่งสื่อถึง gladius หรือดาบสั้นที่เป็นอาวุธคู่กายของพวกเขา จุดเริ่มต้นย้อนกลับไปยาวนานตั้งแต่สมัยอารยธรรมอีทรัสคัน (Etruscans) ราว 1100 ปีก่อนคริสตศักราช ซึ่งเดิมทีจัดขึ้นตามพิธีกรรมทางศาสนา ต่อมาเมื่ออาณาจักรโรมันเรืองอำนาจขึ้น การประลองจึงค่อยๆ หลุดจากการผูกติดกับศาสนาและกลายมาเป็นมหรสพความบันเทิงทั่วอาณาจักรที่มีเงินรางวัลและชื่อเสียงเป็นเดิมพัน ทำให้ในภายหลังกลาดิเอเตอร์จึงไม่ใช่เหล่าทาสเหมือนสมัยก่อนแล้ว แต่เริ่มมีผู้คนจากทั่วทุกสารทิศ ไม่ว่าจะเป็น นายทหารที่เกษียณอายุ นักรบ รวมถึงเหล่าคนจนผู้ไม่มีอันจะกิน ต่างก็หันหน้าเข้าสู่การเป็นการกลาดิเอเตอร์ เพื่อหวังจะได้เกียรติยศและเงินทองกลับไป
+          </p>
+          <div class="history-quote">
+            “Ave, Imperator, morituri te salutant — ข้าแต่จักรพรรดิ ผู้ที่กำลังจะก้าวไปสู่ความตายขอคารวะท่าน”
+            <cite>— ถ้อยคำปฏิญาณก่อนลงสู่ผืนทรายสังเวียนโคลิเซียม</cite>
+          </div>
+          <p class="history-paragraph">
+           เมื่อมีผู้คนสนใจก้าวเข้าสู่เส้นทางนี้มากขึ้น จึงมีการจัดตั้งโรงเรียนสำหรับฝึกสอนกลาดิเอเตอร์ขึ้นโดยเฉพาะในชื่อว่า ludus gladiatorius (ซึ่งมีมากกว่า 100 แห่งทั่วจักรวรรดิโรมัน) ภายในโรงเรียนจะมี 'ลานิสตา' (lanista) ทำหน้าที่เป็นทั้งเจ้าของโรงเรียน ครูผู้ฝึกสอนการใช้อาวุธและการเตรียมร่างกาย รวมถึงเป็นเจ้าของกรรมสิทธิ์ในการซื้อขายหรือให้เช่าตัวกลาดิเอเตอร์ในสังกัด
+          </p>
+        </div>
+
+        <div class="history-gallery">
+          <div class="gallery-card">
+            <img src="ภาพประกอบ/ภาพประกอบ1.jpg" alt="Gladiator">
+            <div class="gallery-info">
+              <h4 class="gallery-title">ชัยชนะของนักรบกลาดิเอเตอร์ (Gladiator)</h4>
+              <p class="gallery-desc">การประลองบนสนามกีฬากลางแจ้งยุคโบราณของอาณาจักรโรมัน</p>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="ภาพประกอบ/ภาพประกอบ2.jpg" alt="Gladiator">
+            <div class="gallery-info">
+              <h4 class="gallery-title">การประลองของนักรบกลาดิเอเตอร์ (Gladiator)</h4>
+              <p class="gallery-desc">แสดงถึงภาพบรรยากาศการต่อสู้และการแข่งขันเพื่อความบันเทิงในอดีต</p>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Ludus_magnus_Rome_2006.jpg/960px-Ludus_magnus_Rome_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Ludus and Training">
+            <div class="gallery-info">
+              <h4 class="gallery-title">โรงเรียนฝึกนักสู้ (Ludus)</h4>
+              <p class="gallery-desc">ค่ายฝึกวินัย กายภาพ และยุทธวิธีการรบภายใต้การฝึกซ้อมของปรมาจารย์ Doctore</p>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="https://happylongway.com/wp-content/uploads/2018/10/Colosseum-800x500.jpg" alt="Colosseum ">
+            <div class="gallery-info">
+              <h4 class="gallery-title">โคลอสเซียม (Colosseum)</h4>
+              <p class="gallery-desc">เป็นสนามกีฬาเพื่อความบันเทิงของประชาชน เช่น การต่อสู้ของนักรบกลาดิเอเตอร์ (Gladiator), การล่าสัตว์ป่า, การประหารชีวิต และการจำลองสงครามทางทะเล</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATISTICAL ANALYTICS SECTION ================= -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="museum-label">ARCHIVE DATA ANALYTICS</div>
+      <h2 class="section-title">ภาพรวมสถิติสำคัญ (Key Combat Statistics)</h2>
+      <p class="section-subtitle">
+        การประมวลผลข้อมูลเชิงสถิติจากบันทึกนักสู้ทั้งหมดในสังเวียน แสดงผลผ่านแดชบอร์ดข้อมูลเชิงลึกแบบอินเทอร์แอคทีฟ
+      </p>
+
+      <!-- 4 High-Level Summary Stat Cards -->
+      <div class="summary-cards-grid">
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-label">จำนวนนักสู้ทั้งหมด</span>
+            <i class="fi fi-rr-users-alt stat-icon"></i>
+          </div>
+          <div class="stat-value" id="counter-total">9,976</div>
+          <div class="stat-note">ข้อมูลรายบุคคลครบถ้วน</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-label">สถิติการชนะรวม</span>
+            <i class="fi fi-rr-trophy stat-icon"></i>
+          </div>
+          <div class="stat-value" id="counter-wins">78,256</div>
+          <div class="stat-note">ครั้ง</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-label">สถิติการแพ้รวม</span>
+            <i class="fi fi-rr-cross-circle stat-icon"></i>
+          </div>
+          <div class="stat-value" id="counter-losses">17,270</div>
+          <div class="stat-note">ครั้ง</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-label">อัตราส่วนเฉลี่ยชัยชนะ</span>
+            <i class="fi fi-rr-chart-histogram stat-icon"></i>
+          </div>
+          <div class="stat-value" id="counter-avg-wins">7.8</div>
+          <div class="stat-note">ครั้งต่อคน</div>
+        </div>
+      </div>
+
+      <!-- Charts Grid -->
+      <div class="charts-grid">
+        <!-- 1. Fighting Styles Chart -->
+        <div class="chart-box">
+          <div class="chart-header">
+            <div class="chart-title-group">
+              <h3>สไตล์การต่อสู้ยอดฮิต (Fighting Styles)</h3>
+              <p>การกระจายตัวของประเภทนักสู้โรมัน 6 สายยอดนิยม</p>
+            </div>
+            <i class="fi fi-rr-shield" style="font-size: 1.2rem; color: var(--text-secondary);"></i>
+          </div>
+          <div class="chart-canvas-wrapper">
+            <canvas id="chart-category"></canvas>
+          </div>
+        </div>
+
+        <!-- 2. Weapons Popularity Chart -->
+        <div class="chart-box">
+          <div class="chart-header">
+            <div class="chart-title-group">
+              <h3>อาวุธยอดนิยม (Popular Weapons)</h3>
+              <p>สถิติการเลือกใช้อาวุธประจำกายในสังเวียน</p>
+            </div>
+            <i class="fi fi-rr-sword" style="font-size: 1.2rem; color: var(--text-secondary);"></i>
+          </div>
+          <div class="chart-canvas-wrapper">
+            <canvas id="chart-weapons"></canvas>
+          </div>
+        </div>
+
+        <!-- 3. Injury History Chart -->
+        <div class="chart-box">
+          <div class="chart-header">
+            <div class="chart-title-group">
+              <h3>สถิติการได้รับบาดเจ็บ (Injury History)</h3>
+              <p>สัดส่วนประวัติการบาดเจ็บระดับต่ำ (Low) เทียบกับระดับสูง (High)</p>
+            </div>
+            <i class="fi fi-rr-heartbeat" style="font-size: 1.2rem; color: var(--text-secondary);"></i>
+          </div>
+          <div class="chart-canvas-wrapper">
+            <canvas id="chart-injuries"></canvas>
+          </div>
+        </div>
+
+        <!-- 4. Win vs Loss Ratio Chart -->
+        <div class="chart-box">
+          <div class="chart-header">
+            <div class="chart-title-group">
+              <h3>สถิติการชนะ vs การแพ้ (Win/Loss Proportion)</h3>
+              <p>สัดส่วนผลลัพธ์การต่อสู้ทั้งหมดในประวัติศาสตร์</p>
+            </div>
+            <i class="fi fi-rr-scale" style="font-size: 1.2rem; color: var(--text-secondary);"></i>
+          </div>
+          <div class="chart-canvas-wrapper">
+            <canvas id="chart-winloss"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CHAMPIONS SPOTLIGHT ================= -->
+  <section class="champions-section">
+    <div class="container">
+      <div class="museum-label">ARENA LEGENDS</div>
+      <h2 class="section-title">ทำเนียบยอดนักสู้ไร้พ่าย (Top Arena Champions)</h2>
+      <p class="section-subtitle">
+        สุดยอดนักสู้ผู้ครอบครองสถิติชัยชนะสูงสุดและเป็นขวัญใจมหาชนชาวโรมัน
+      </p>
+
+      <div class="champions-grid" id="champions-grid">
+        <!-- Rendered dynamically by home.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-wrapper">
+            <img src="Logo.png" alt="Gladiator Combat Museum Logo" class="brand-logo">
+            <div class="brand-text">
+              <span class="brand-title">Gladiator</span>
+              <span class="brand-sub">Combat Archives</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            เว็บไซต์ Gladiator Combat Archives พัฒนาโดยนิสิตสารสนเทศศึกษา เพื่อรวบรวมบันทึกการประลองโรมันและสร้างกราฟความรู้เชื่อมโยงข้อมูลนักสู้เพื่อการศึกษา
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" title="Instagram"><i class="fi fi-rr-camera"></i></a>
+            <a href="#" class="social-icon" title="Twitter"><i class="fi fi-rr-comment-alt"></i></a>
+            <a href="#" class="social-icon" title="GitHub"><i class="fi fi-rr-code-fork"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-heading">เมนูเว็บไซต์</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fi fi-rr-home"></i> หน้าแรก (Home)</a></li>
+            <li><a href="knowledge-graph.html"><i class="fi fi-rr-network"></i> โครงข่ายความรู้ (Graph)</a></li>
+            <li><a href="gladiators.html"><i class="fi fi-rr-users"></i> รายชื่อนักสู้ (Gladiator)</a></li>
+            <li><a href="maps.html"><i class="fi fi-rr-map"></i> แผนที่โบราณ (Ancient Map)</a></li>
+            <li><a href="about.html"><i class="fi fi-rr-info"></i> เกี่ยวกับเรา (About)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-analytics">
+          <h4 class="footer-heading">หมวดสถิติ</h4>
+          <ul class="footer-links">
+            <li><a href="gladiators.html?sort=wins-desc">ทำเนียบชัยชนะ</a></li>
+            <li><a href="gladiators.html?category=Provocator">สาย Provocator</a></li>
+            <li><a href="gladiators.html?category=Retiarius">สาย Retiarius</a></li>
+            <li><a href="gladiators.html?origin=Rome">นักสู้แห่งกรุงโรม</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-heading">ช่องทางการติดต่อ</h4>
+          <ul class="contact-info">
+            <li class="contact-item">
+              <i class="fi fi-rr-marker"></i>
+              <span>169 ถนนลงหาดบางแสน ตำบลแสนสุข อำเภอเมือง จังหวัดชลบุรี 20131</span>
+            </li>
+            <li class="contact-item">
+              <i class="fi fi-rr-envelope"></i>
+              <span>curator@gladiator-combat-museum.org</span>
+            </li>
+            <li class="contact-item">
+              <i class="fi fi-rr-phone-call"></i>
+              <span>+39 06 3996 7700 (Museum Archives)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Gladiator Combat Archives & Digital Museum. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts (Separated JS Files) -->
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

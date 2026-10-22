@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gladiator Catalog | รายชื่อนักสู้โรมัน</title>
+  
+  <!-- Google Fonts: Bai Jamjuree & Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Flaticon Uicons Regular Rounded -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gladiators.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER / NAVIGATOR ================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-wrapper">
+        <img src="Logo.png" alt="Gladiator Combat Museum Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">Gladiator</span>
+          <span class="brand-sub">Combat Archives</span>
+        </div>
+      </a>
+
+      <!-- Search Box -->
+      <div class="header-search">
+        <form class="header-search-form" action="gladiators.html" method="GET">
+          <input type="text" name="search" placeholder="ค้นหาชื่อนักสู้ หรือคีย์เวิร์ด..." autocomplete="off">
+          <button type="submit" class="header-search-btn" title="ค้นหา">
+            <i class="fi fi-rr-search"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="knowledge-graph.html" class="nav-link">Knowledge Graph</a>
+        <a href="gladiators.html" class="nav-link active">Gladiator</a>
+        <a href="maps.html" class="nav-link">Ancient Map</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <i class="fi fi-rr-menu-burger"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= PAGE TITLE HEADER ================= -->
+  <section class="archive-header-section">
+    <div class="container">
+      <div class="museum-label">ARCHIVAL ROSTER</div>
+      <h1 class="section-title">รายชื่อนักสู้ (Gladiator Catalog)</h1>
+      <p class="section-subtitle">
+        ทางเว็บไซต์ได้ดำเนินการรวบรวมรายชื่อนักสู้มากกว่า 9,900 รายชื่อภายในในฐานข้อมูล เพื่อให้ท่านสามารถค้นหา ตรวจสอบ และเรียกดูข้อมูลได้อย่างสะดวกรวดเร็วตามความต้องการ
+      </p>
+
+      <!-- Control Bar (Search, Filters, Sort) -->
+      <div class="controls-bar">
+        <div class="controls-row-top">
+          <!-- Live Search Input -->
+          <div class="search-box-large">
+            <input type="text" id="gladiator-search" placeholder="พิมพ์ชื่อนักสู้, ถิ่นกำเนิด, อาวุธ, หรืออาชีพเดิม..." autocomplete="off">
+            <button class="search-icon-btn" title="ค้นหา">
+              <i class="fi fi-rr-search"></i>
+            </button>
+          </div>
+
+          <!-- Sort Select -->
+          <div class="filter-group">
+            <span class="filter-label">จัดเรียงตาม:</span>
+            <select id="sort-select" class="filter-select">
+              <option value="wins-desc">ชัยชนะ (มากไปน้อย)</option>
+              <option value="wins-asc">ชัยชนะ (น้อยไปมาก)</option>
+              <option value="name-asc">ชื่อตัวอักษร (A ➔ Z)</option>
+              <option value="name-desc">ชื่อตัวอักษร (Z ➔ A)</option>
+              <option value="losses-desc">ความพ่ายแพ้ (มากไปน้อย)</option>
+              <option value="age-desc">อายุ (มากไปน้อย)</option>
+              <option value="age-asc">อายุ (น้อยไปมาก)</option>
+            </select>
+          </div>
+
+          <button id="reset-filters-btn" class="btn btn-secondary" style="height: 40px; padding: 0 1rem; font-size: 0.82rem;">
+            <i class="fi fi-rr-rotate-left"></i> ล้างตัวกรอง
+          </button>
+        </div>
+
+        <div class="controls-row-filters">
+          <!-- Filter Origin -->
+          <div class="filter-group">
+            <span class="filter-label">ถิ่นกำเนิด:</span>
+            <select id="filter-origin" class="filter-select">
+              <option value="all">ทั้งหมด (All Origins)</option>
+              <option value="Rome">Rome (โรม)</option>
+              <option value="Numidia">Numidia (นูมิเดีย)</option>
+              <option value="Greece">Greece (กรีซ)</option>
+              <option value="Germania">Germania (เจอร์มาเนีย)</option>
+              <option value="Gaul">Gaul (โกล)</option>
+              <option value="Thrace">Thrace (เธรซ)</option>
+            </select>
+          </div>
+
+          <!-- Filter Category -->
+          <div class="filter-group">
+            <span class="filter-label">สไตล์การต่อสู้:</span>
+            <select id="filter-category" class="filter-select">
+              <option value="all">ทั้งหมด (All Styles)</option>
+              <option value="Provocator">Provocator</option>
+              <option value="Thraex">Thraex</option>
+              <option value="Retiarius">Retiarius</option>
+              <option value="Secutor">Secutor</option>
+              <option value="Hoplomachus">Hoplomachus</option>
+              <option value="Murmillo">Murmillo</option>
+            </select>
+          </div>
+
+          <!-- Filter Weapon -->
+          <div class="filter-group">
+            <span class="filter-label">อาวุธ:</span>
+            <select id="filter-weapon" class="filter-select">
+              <option value="all">ทั้งหมด (All Weapons)</option>
+              <option value="Dagger">Dagger (กริช)</option>
+              <option value="Gladius">Gladius (ดาบสั้น)</option>
+              <option value="Sica">Sica (ดาบโค้ง)</option>
+              <option value="Trident">Trident (สามง่าม)</option>
+              <option value="Net">Net (ตาข่าย)</option>
+              <option value="Spear">Spear (หอก)</option>
+            </select>
+          </div>
+
+          <!-- Result Count Badge -->
+          <div class="results-count-badge">
+            พบข้อมูลทั้งหมด: <span id="result-count">9,976</span> คน
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GLADIATOR TABLE SECTION ================= -->
+  <section style="background: var(--bg-primary); padding: 1rem 0;">
+    <div class="container">
+      <div class="table-container">
+        <div id="table-loading" style="padding: 3rem; text-align: center; color: var(--text-secondary);">
+          <i class="fi fi-rr-spinner" style="font-size: 2rem; animation: spin 1s infinite linear;"></i>
+          <p style="margin-top: 1rem;">กำลังโหลดฐานข้อมูลนักสู้...</p>
+        </div>
+        <table class="museum-table">
+          <thead>
+            <tr>
+              <th>ลำดับ</th>
+              <th>ชื่อนักสู้ (Name)</th>
+              <th>อายุ (Age)</th>
+              <th>ที่มา (Origin)</th>
+              <th>สไตล์การต่อสู้ (Style)</th>
+              <th>สถิติ ชนะ / แพ้</th>
+            </tr>
+          </thead>
+          <tbody id="gladiators-tbody">
+            <!-- Dynamically injected by gladiators.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Pagination Controls -->
+      <div class="pagination-wrapper" id="pagination-wrapper">
+        <div class="pagination-info" id="pagination-info">
+          แสดง 1 - 25 จาก 9,976 รายการ
+        </div>
+        <div class="pagination-controls" id="pagination-buttons">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GLADIATOR DETAIL MODAL (14 REQUIRED FIELDS) ================= -->
+  <div class="modal-backdrop" id="gladiator-modal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-name-group">
+          <div class="modal-subtitle" id="m-category-origin">GLADIATOR ARCHIVE PROFILE</div>
+          <h2 id="m-name">Aelius Verus</h2>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" title="ปิดหน้าต่าง">
+          <i class="fi fi-rr-cross"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Combat Quick Stats Ribbon -->
+        <div class="modal-stats-ribbon">
+          <div class="ribbon-item">
+            <div class="ribbon-num" id="m-wins" style="color: #ffffff;">11</div>
+            <div class="ribbon-label">ชนะ (Wins)</div>
+          </div>
+          <div class="ribbon-item">
+            <div class="ribbon-num" id="m-losses" style="color: #737373;">4</div>
+            <div class="ribbon-label">แพ้ (Losses)</div>
+          </div>
+          <div class="ribbon-item">
+            <div class="ribbon-num" id="m-winrate" style="color: #ffffff;">73%</div>
+            <div class="ribbon-label">อัตราคว้าชัย</div>
+          </div>
+          <div class="ribbon-item">
+            <div class="ribbon-num" id="m-favor" style="color: #ffffff;">0.84</div>
+            <div class="ribbon-label">ความนิยมสาธารณชน</div>
+          </div>
+        </div>
+
+        <div class="museum-label" style="margin-bottom: 1rem;">COMPLETE BIOGRAPHICAL PROFILE • 14 ข้อมูลตามระเบียน</div>
+
+        <!-- 14 Required Fields Grid -->
+        <div class="detail-fields-grid">
+          <!-- 1. ชื่อ -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-user"></i> 1. ชื่อนักสู้ (Name)</div>
+            <div class="field-val highlight" id="f-name">-</div>
+          </div>
+
+          <!-- 2. อายุ -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-calendar"></i> 2. อายุ (Age)</div>
+            <div class="field-val" id="f-age">-</div>
+          </div>
+
+          <!-- 3. ปีเกิด -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-hourglass"></i> 3. ปีเกิด (Birth Year)</div>
+            <div class="field-val" id="f-birthyear">-</div>
+          </div>
+
+          <!-- 4. ถิ่นกำเนิด -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-marker"></i> 4. ถิ่นกำเนิด (Origin)</div>
+            <div class="field-val highlight" id="f-origin">-</div>
+          </div>
+
+          <!-- 5. น้ำหนัก -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-dashboard"></i> 5. น้ำหนัก (Weight)</div>
+            <div class="field-val" id="f-weight">-</div>
+          </div>
+
+          <!-- 6. ส่วนสูง -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-arrows-v"></i> 6. ส่วนสูง (Height)</div>
+            <div class="field-val" id="f-height">-</div>
+          </div>
+
+          <!-- 7. สไตล์การต่อสู้ -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-shield"></i> 7. สไตล์การต่อสู้ (Style)</div>
+            <div class="field-val highlight" id="f-category">-</div>
+          </div>
+
+          <!-- 8. จำนวนครั้งที่ชนะ -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-trophy"></i> 8. จำนวนครั้งที่ชนะ (Wins)</div>
+            <div class="field-val highlight" id="f-wins">-</div>
+          </div>
+
+          <!-- 9. จำนวนครั้งที่แพ้ -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-cross-circle"></i> 9. จำนวนครั้งที่แพ้ (Losses)</div>
+            <div class="field-val" id="f-losses">-</div>
+          </div>
+
+          <!-- 10. อาวุธ -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-sword"></i> 10. อาวุธประจำกาย (Weapon)</div>
+            <div class="field-val highlight" id="f-weapon">-</div>
+          </div>
+
+          <!-- 11. อาชีพเดิม -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-briefcase"></i> 11. อาชีพเดิม (Previous Occupation)</div>
+            <div class="field-val" id="f-occupation">-</div>
+          </div>
+
+          <!-- 12. ผู้สนับสนุน -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-coins"></i> 12. ผู้สนับสนุน (Patron Wealth)</div>
+            <div class="field-val" id="f-patron">-</div>
+          </div>
+
+          <!-- 13. ความเข้มข้นในการฝึกฝน -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-flame"></i> 13. ความเข้มข้นในการฝึกฝน (Training)</div>
+            <div class="field-val" id="f-training">-</div>
+          </div>
+
+          <!-- 14. ความนิยมจากสาธารณะชน -->
+          <div class="field-item">
+            <div class="field-title"><i class="fi fi-rr-heart"></i> 14. ความนิยมจากสาธารณชน (Public Favor)</div>
+            <div class="field-val highlight" id="f-publicfavor">-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-wrapper">
+            <img src="Logo.png" alt="Gladiator Combat Museum Logo" class="brand-logo">
+            <div class="brand-text">
+              <span class="brand-title">Gladiator</span>
+              <span class="brand-sub">Combat Archives</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            เว็บไซต์ Gladiator Combat Archives พัฒนาโดยนิสิตสารสนเทศศึกษา เพื่อรวบรวมบันทึกการประลองโรมันและสร้างกราฟความรู้เชื่อมโยงข้อมูลนักสู้เพื่อการศึกษา
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" title="Instagram"><i class="fi fi-rr-camera"></i></a>
+            <a href="#" class="social-icon" title="Twitter"><i class="fi fi-rr-comment-alt"></i></a>
+            <a href="#" class="social-icon" title="GitHub"><i class="fi fi-rr-code-fork"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-heading">เมนูเว็บไซต์</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fi fi-rr-home"></i> หน้าแรก (Home)</a></li>
+            <li><a href="knowledge-graph.html"><i class="fi fi-rr-network"></i> โครงข่ายความรู้ (Graph)</a></li>
+            <li><a href="gladiators.html"><i class="fi fi-rr-users"></i> รายชื่อนักสู้ (Gladiator)</a></li>
+            <li><a href="maps.html"><i class="fi fi-rr-map"></i> แผนที่โบราณ (Ancient Map)</a></li>
+            <li><a href="about.html"><i class="fi fi-rr-info"></i> เกี่ยวกับเรา (About)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-analytics">
+          <h4 class="footer-heading">ถิ่นกำเนิดนักสู้</h4>
+          <ul class="footer-links">
+            <li><a href="gladiators.html?origin=Rome">Rome (โรม)</a></li>
+            <li><a href="gladiators.html?origin=Numidia">Numidia (นูมิเดีย)</a></li>
+            <li><a href="gladiators.html?origin=Germania">Germania (เจอร์มาเนีย)</a></li>
+            <li><a href="gladiators.html?origin=Greece">Greece (กรีซ)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-heading">ช่องทางการติดต่อ</h4>
+          <ul class="contact-info">
+            <li class="contact-item">
+              <i class="fi fi-rr-marker"></i>
+              <span>169 ถนนลงหาดบางแสน ตำบลแสนสุข อำเภอเมือง จังหวัดชลบุรี 20131</span>
+            </li>
+            <li class="contact-item">
+              <i class="fi fi-rr-envelope"></i>
+              <span>curator@gladiator-combat-museum.org</span>
+            </li>
+            <li class="contact-item">
+              <i class="fi fi-rr-phone-call"></i>
+              <span>+39 06 3996 7700 (Museum Archives)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Gladiator Combat Archives & Digital Museum. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/gladiators.js"></script>
+</body>
+</html>

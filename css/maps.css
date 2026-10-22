@@ -1,0 +1,227 @@
+/* ==========================================
+   CSS เฉพาะสำหรับหน้าแผนที่ (maps.css) - แก้ไขตามสไตล์เดิมเป๊ะ
+========================================== */
+
+body {
+  background-color: var(--bg-primary, #1a1a1a);
+  color: var(--text-primary, #fafafa);
+  font-family: var(--font-main, 'Bai Jamjuree', sans-serif);
+}
+.map-page-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.archive-header-section {
+  padding:4.5rem 0 2.5rem;
+  background: var(--bg-primary);
+  
+}
+
+
+.archive-header-section .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.archive-header-section .section-title {
+    margin: 12px 0;
+    color: var(--text-primary, #fafafa);
+    line-height: 1;
+}
+
+.archive-header-section .section-subtitle {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    color: var(--text-secondary, #d3d3d3);
+    line-height: 1.8;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.archive-header-section .map-page-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.archive-header-section .map-placeholder {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    color: var(--text-secondary, #d3d3d3);
+    text-align: center;
+}
+
+.section-heading {
+  font-family: var(--font-display, 'Cinzel', serif);
+  font-size: 2rem;
+  color: var(--text-primary, #fafafa);
+  font-weight: 700;
+}
+
+.section-desc {
+  color: var(--text-secondary, #d3d3d3);
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+/* ส่วนแสดงกรอบรูปแผนที่โบราณ */
+.ancient-map-placeholder {
+  width: 100%;
+  height: 300px;
+  background: var(--bg-card, #272727);
+  border: 2px dashed var(--border-medium, #727272);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary, #d3d3d3);
+  margin-top: 25px;
+}
+
+.ancient-map-placeholder i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--text-primary, #fafafa);
+}
+
+.placeholder-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted, #a3a3a3);
+  margin-top: 5px;
+}
+
+.map-placeholder img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+/* ส่วนล่าง: เลย์เอาต์ 2 คอลัมน์ (แผนที่ปัจจุบัน) */
+.modern-map-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .modern-map-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ปุ่มเลือกเมือง */
+.city-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.city-btn {
+  background: var(--bg-secondary, #1a1a1a);
+  border: 1px solid var(--border-medium, #727272);
+  color: var(--text-primary, #fafafa);
+  padding: 10px 18px;
+  border-radius: 0; 
+  cursor: pointer;
+  font-family: var(--font-main, 'Bai Jamjuree', sans-serif);
+  font-weight: 600; /* ตัวหนังสือหนาขึ้น */
+  transition: all 0.2s ease;
+}
+
+.city-btn:hover, 
+.city-btn.active {
+  background: var(--btn-primary-bg, #f5f5f5);
+  color: var(--btn-primary-text, #0b0b0b);
+  border-color: var(--btn-primary-border, #f5f5f5);
+  font-weight: 700;
+}
+
+/* กรอบแสดง Google Maps Iframe */
+.map-frame-wrapper {
+  width: 100%;
+  height: 450px;
+  border-radius: 0; 
+  overflow: hidden;
+  border: 1px solid var(--border-medium, #727272);
+  background: #000;
+}
+
+.map-frame-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* กล่องคำอธิบายฝั่งขวา */
+.description-box h3 {
+  font-family: var(--font-display, 'Cinzel', serif);
+  color: var(--text-primary, #fafafa);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--border-medium, #727272);
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.info-group {
+  margin-bottom: 15px;
+}
+
+.info-label {
+  font-weight: 700; /* ตัวหนังสือหนา */
+  color: var(--text-primary, #fafafa); 
+  margin-bottom: 4px;
+}
+
+.info-text {
+  color: var(--text-secondary, #d3d3d3); 
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .archive-header-section {
+        padding: 3rem 12px 2rem;
+    }
+
+    .archive-header-section .container,
+    .archive-header-section .map-page-container {
+        padding: 0 12px;
+    }
+
+    .archive-header-section .map-placeholder {
+        min-height: 250px;
+        padding: 24px 12px;
+    }
+}

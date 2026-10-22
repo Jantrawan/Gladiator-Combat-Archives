@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Graph | โครงข่ายความสัมพันธ์ Neo4j Gladiator Combat</title>
+  
+  <!-- Google Fonts: Bai Jamjuree & Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Flaticon Uicons Regular Rounded -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+
+  <!-- Vis-network CDN for interactive graph visualization -->
+  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/graph.css">
+</head>
+<body>
+
+  <!-- ================= SITE HEADER / NAVIGATOR ================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-wrapper">
+        <img src="Logo.png" alt="Gladiator Combat Museum Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">Gladiator</span>
+          <span class="brand-sub">Combat Archives</span>
+        </div>
+      </a>
+
+      <!-- Search Box -->
+      <div class="header-search">
+        <form class="header-search-form" action="gladiators.html" method="GET">
+          <input type="text" name="search" placeholder="ค้นหาชื่อนักสู้ หรือคีย์เวิร์ด..." autocomplete="off">
+          <button type="submit" class="header-search-btn" title="ค้นหา">
+            <i class="fi fi-rr-search"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="knowledge-graph.html" class="nav-link active">Knowledge Graph</a>
+        <a href="gladiators.html" class="nav-link">Gladiator</a>
+        <a href="maps.html" class="nav-link">Ancient Map</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <i class="fi fi-rr-menu-burger"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= GRAPH PAGE HEADER ================= -->
+  <section class="graph-page-header">
+    <div class="container">
+      <div class="museum-label">GRAPH DATABASE ANALYTICS</div>
+      <h1 class="section-title">โครงข่ายความรู้เชิงกราฟ (Knowledge Graph)</h1>
+      <p class="section-subtitle">
+        จำลองโครงข่ายความสัมพันธ์เชิงภววิทยา (Ontology) ระหว่างนักสู้ สไตล์การต่อสู้ อาวุธ และสังเวียนในประวัติศาสตร์ 
+      </p>
+
+      <!-- Cypher Query Display -->
+      <div class="cypher-badge">
+        <i class="fi fi-rr-terminal"></i>
+        <span>Cypher Query: <strong>MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25</strong></span>
+      </div>
+
+      <!-- Neo4j Connection Bar -->
+      <div class="neo4j-status-bar">
+        <div class="connection-info">
+          <div class="status-indicator">
+            <span class="status-dot"></span>
+            <span>Neo4j Python Connector Active</span>
+          </div>
+          <div class="param-pill">User: <code>6aa638c7</code></div>
+          <div class="param-pill">Host: <code>6aa638c7.databases.neo4j.io</code></div>
+          <div class="param-pill">Total Nodes: <strong id="stat-node-count" style="color: #fff;">0</strong></div>
+          <div class="param-pill">Total Relationships: <strong id="stat-edge-count" style="color: #fff;">25</strong></div>
+        </div>
+
+        <div class="neo4j-actions">
+          <button id="btn-reload-graph" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.5rem 1rem;">
+            <i class="fi fi-rr-refresh"></i> รีเฟรชกราฟ
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GRAPH VISUALIZATION WORKSPACE ================= -->
+  <section style="background: var(--bg-primary);">
+    <div class="container">
+      <div class="graph-viewport-container">
+        <!-- Canvas Frame -->
+        <div class="graph-canvas-frame">
+          <!-- Floating Controls -->
+          <div class="canvas-controls-overlay">
+            <button class="btn btn-icon" id="btn-zoom-in" title="ซูมเข้า"><i class="fi fi-rr-zoom-in"></i></button>
+            <button class="btn btn-icon" id="btn-zoom-out" title="ซูมออก"><i class="fi fi-rr-zoom-out"></i></button>
+            <button class="btn btn-icon" id="btn-fit-view" title="ปรับมุมมองให้พอดี"><i class="fi fi-rr-expand"></i></button>
+          </div>
+
+          <!-- Network Canvas -->
+          <div id="network-container"></div>
+
+          <!-- Floating Legend -->
+          <div class="graph-legend-overlay">
+            <div class="legend-item">
+              <span class="legend-color-box" style="background: #e8e8e8; border: 1px solid #ffffff;"></span>
+              <span>Gladiator (นักสู้)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color-box" style="background: #85776d;"></span>
+              <span>Category (สไตล์)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color-box" style="background: #2e4053;"></span>
+              <span>Weapon (อาวุธ)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color-box" style="background: #5e4b42;"></span>
+              <span>Origin (ถิ่นกำเนิด)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color-box" style="background: #1c2a49; border: 1px solid #a6a6a6;"></span>
+              <span>Arena (สังเวียน)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color-box" style="background: #3c2f2f; border: 1px solid #a6a6a6;"></span>
+              <span>School (ค่ายฝึก)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Inspector Panel -->
+        <div class="graph-inspector-panel">
+          <div class="inspector-header">
+            <h3>ตัวตรวจสอบโหนด (Inspector)</h3>
+            <p>คุณสมบัติเชิงลึกของเอนทิตีที่เลือก</p>
+          </div>
+
+          <div class="inspector-content" id="inspector-content">
+            <div class="inspector-empty">
+              <i class="fi fi-rr-cursor"></i>
+              <p>คลิกเลือกโหนด (Node) หรือเส้นความสัมพันธ์ (Edge) ในกราฟเพื่อดูคุณสมบัติและสถิติเชิงลึก</p>
+            </div>
+          </div>
+
+          <!-- Python Connector Snippet -->
+          <div style="margin-top: 2rem; border-top: 1px solid var(--border-light); padding-top: 1.2rem;">
+            <div class="museum-label" style="font-size: 0.68rem;">PYTHON NEO4J BACKEND SCRIPT</div>
+            <div class="code-preview-box">
+from neo4j import GraphDatabase
+
+uri = "neo4j+s://6aa638c7.databases.neo4j.io"
+auth = ("6aa638c7", "9y0bZ4bLP4w-hAFPWE8-cATtHKImvRO25rv1IRT_fbY")
+cypher = "MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25"
+
+driver = GraphDatabase.driver(uri, auth=auth)
+with driver.session() as s:
+    result = s.run(cypher)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-wrapper">
+            <img src="Logo.png" alt="Gladiator Combat Museum Logo" class="brand-logo">
+            <div class="brand-text">
+              <span class="brand-title">Gladiator</span>
+              <span class="brand-sub">Combat Archives</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            เว็บไซต์ Gladiator Combat Archives พัฒนาโดยนิสิตสารสนเทศศึกษา เพื่อรวบรวมบันทึกการประลองโรมันและสร้างกราฟความรู้เชื่อมโยงข้อมูลนักสู้เพื่อการศึกษา
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" title="Instagram"><i class="fi fi-rr-camera"></i></a>
+            <a href="#" class="social-icon" title="Twitter"><i class="fi fi-rr-comment-alt"></i></a>
+            <a href="#" class="social-icon" title="GitHub"><i class="fi fi-rr-code-fork"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-heading">เมนูเว็บไซต์</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fi fi-rr-home"></i> หน้าแรก (Home)</a></li>
+            <li><a href="knowledge-graph.html"><i class="fi fi-rr-network"></i> โครงข่ายความรู้ (Graph)</a></li>
+            <li><a href="gladiators.html"><i class="fi fi-rr-users"></i> รายชื่อนักสู้ (Gladiator)</a></li>
+            <li><a href="maps.html"><i class="fi fi-rr-map"></i> แผนที่โบราณ (Ancient Map)</a></li>
+            <li><a href="about.html"><i class="fi fi-rr-info"></i> เกี่ยวกับเรา (About)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-analytics">
+          <h4 class="footer-heading">หมวดสถิติ</h4>
+          <ul class="footer-links">
+            <li><a href="gladiators.html?sort=wins-desc">ทำเนียบชัยชนะ</a></li>
+            <li><a href="gladiators.html?category=Provocator">สาย Provocator</a></li>
+            <li><a href="gladiators.html?category=Retiarius">สาย Retiarius</a></li>
+            <li><a href="gladiators.html?origin=Rome">นักสู้แห่งกรุงโรม</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-heading">ช่องทางการติดต่อ</h4>
+          <ul class="contact-info">
+            <li class="contact-item">
+              <i class="fi fi-rr-marker"></i>
+              <span>169 ถนนลงหาดบางแสน ตำบลแสนสุข อำเภอเมือง จังหวัดชลบุรี 20131</span>
+            </li>
+            <li class="contact-item">
+              <i class="fi fi-rr-envelope"></i>
+              <span>curator@gladiator-combat-museum.org</span>
+            </li>
+            <li class="contact-item">
+              <i class="fi fi-rr-phone-call"></i>
+              <span>+39 06 3996 7700 (Museum Archives)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Gladiator Combat Archives & Digital Museum. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/graph.js"></script>
+</body>
+</html>

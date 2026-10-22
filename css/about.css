@@ -1,0 +1,200 @@
+/* ==========================================================================
+   ABOUT PAGE STYLES - MUSEUM MISSION & 10 DEVELOPER PROFILES
+   ========================================================================== */
+
+.about-hero-section {
+  padding: 5rem 0 3.5rem;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-light);
+}
+
+/* Mission & Background Section */
+.mission-section {
+  padding: 6rem 0;
+  background-color: var(--bg-primary);
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.manifesto-box {
+  background: #3b3b3b;
+  border: 2px solid #a6a6a6;
+  border-radius: var(--radius-sm);
+  padding: 3rem;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.manifesto-box::before {
+  content: '“';
+  font-family: var(--font-display);
+  font-size: 7rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.08);
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  pointer-events: none;
+}
+
+.manifesto-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--text-primary);
+  position: relative;
+  z-index: 1;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+}
+
+.pillar-item {
+  background: #333333;
+  border: 2px solid #a6a6a6;
+  border-radius: var(--radius-sm);
+  padding: 1.8rem;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.pillar-item:hover {
+  border-color: #ffffff;
+  transform: translateX(6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.pillar-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.pillar-title i {
+  color: var(--accent-white);
+}
+
+.pillar-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* 10 Team Members Section */
+.team-section {
+  padding: 6rem 0 7rem;
+  background-color: var(--bg-primary);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.team-card {
+  background: #3b3b3b;
+  border: 2px solid #a6a6a6;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.team-card:hover {
+  border-color: #ffffff;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.team-photo-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 125%; /* 4:5 Portrait ratio */
+  overflow: hidden;
+  background: #111111;
+}
+
+.team-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(110%);
+  transition: var(--transition-smooth);
+}
+
+.team-card:hover .team-photo {
+  filter: grayscale(20%) contrast(105%);
+  transform: scale(1.05);
+}
+
+.team-info {
+  padding: 1.4rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.team-name {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--accent-white);
+  margin-bottom: 0.3rem;
+}
+
+.team-position {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.team-bio {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-top: auto;
+}
+
+/* Responsive Team Grid */
+@media (max-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

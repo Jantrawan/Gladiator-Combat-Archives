@@ -1,0 +1,426 @@
+{
+  "source": "gladiator_dataset",
+  "status": "cached",
+  "cypher": "MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25",
+  "nodes": [
+    {
+      "id": "G1",
+      "label": "Minicius Mamilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 23,
+        "Losses": 8,
+        "Status": "Champion"
+      }
+    },
+    {
+      "id": "G2",
+      "label": "Sicinius Aelius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 22,
+        "Losses": 12,
+        "Status": "Veteran"
+      }
+    },
+    {
+      "id": "G3",
+      "label": "Candidus Numonius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 22,
+        "Losses": 12,
+        "Status": "Veteran"
+      }
+    },
+    {
+      "id": "G4",
+      "label": "Fulcinia Vincentius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 22,
+        "Losses": 5,
+        "Status": "Legendary"
+      }
+    },
+    {
+      "id": "G5",
+      "label": "Nasidius Martialis",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 22,
+        "Losses": 4,
+        "Status": "Master"
+      }
+    },
+    {
+      "id": "G6",
+      "label": "Aelius Verus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 11,
+        "Losses": 4,
+        "Status": "Active"
+      }
+    },
+    {
+      "id": "C1",
+      "label": "Provocator",
+      "group": "Category",
+      "properties": {
+        "Description": "Challenger armored with breastplate and helmet"
+      }
+    },
+    {
+      "id": "C2",
+      "label": "Retiarius",
+      "group": "Category",
+      "properties": {
+        "Description": "Net-fighter with trident and dagger"
+      }
+    },
+    {
+      "id": "C3",
+      "label": "Murmillo",
+      "group": "Category",
+      "properties": {
+        "Description": "Fish-crested helmet heavyweight fighter"
+      }
+    },
+    {
+      "id": "C4",
+      "label": "Hoplomachus",
+      "group": "Category",
+      "properties": {
+        "Description": "Greek-style spearman with round shield"
+      }
+    },
+    {
+      "id": "C5",
+      "label": "Thraex",
+      "group": "Category",
+      "properties": {
+        "Description": "Thracian curved sword fighter"
+      }
+    },
+    {
+      "id": "C6",
+      "label": "Secutor",
+      "group": "Category",
+      "properties": {
+        "Description": "Pursuer specially trained against Retiarius"
+      }
+    },
+    {
+      "id": "W1",
+      "label": "Dagger (Pugio)",
+      "group": "Weapon",
+      "properties": {
+        "Type": "Short blade",
+        "Fighters": 4186
+      }
+    },
+    {
+      "id": "W2",
+      "label": "Gladius (Sword)",
+      "group": "Weapon",
+      "properties": {
+        "Type": "Short sword",
+        "Fighters": 2507
+      }
+    },
+    {
+      "id": "W3",
+      "label": "Sica",
+      "group": "Weapon",
+      "properties": {
+        "Type": "Curved sword",
+        "Fighters": 843
+      }
+    },
+    {
+      "id": "W4",
+      "label": "Trident",
+      "group": "Weapon",
+      "properties": {
+        "Type": "Three-pronged spear",
+        "Fighters": 820
+      }
+    },
+    {
+      "id": "W5",
+      "label": "Net (Rete)",
+      "group": "Weapon",
+      "properties": {
+        "Type": "Weighted net",
+        "Fighters": 818
+      }
+    },
+    {
+      "id": "W6",
+      "label": "Spear (Hasta)",
+      "group": "Weapon",
+      "properties": {
+        "Type": "Polearm",
+        "Fighters": 802
+      }
+    },
+    {
+      "id": "O1",
+      "label": "Rome",
+      "group": "Origin",
+      "properties": {
+        "Region": "Italia",
+        "Count": 1700
+      }
+    },
+    {
+      "id": "O2",
+      "label": "Germania",
+      "group": "Origin",
+      "properties": {
+        "Region": "Northern Europe",
+        "Count": 1659
+      }
+    },
+    {
+      "id": "O3",
+      "label": "Numidia",
+      "group": "Origin",
+      "properties": {
+        "Region": "North Africa",
+        "Count": 1689
+      }
+    },
+    {
+      "id": "O4",
+      "label": "Gaul",
+      "group": "Origin",
+      "properties": {
+        "Region": "Western Europe",
+        "Count": 1633
+      }
+    },
+    {
+      "id": "A1",
+      "label": "Colosseum (Flavian)",
+      "group": "Arena",
+      "properties": {
+        "Location": "Rome",
+        "Capacity": 50000
+      }
+    },
+    {
+      "id": "L1",
+      "label": "Ludus Magnus",
+      "group": "School",
+      "properties": {
+        "Location": "Rome",
+        "Type": "Imperial Gladiatorial School"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "G1",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {
+        "Mastery": "Expert"
+      }
+    },
+    {
+      "from": "G1",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {
+        "Proficiency": "Deadly"
+      }
+    },
+    {
+      "from": "G1",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {
+        "Citizenship": "Roman"
+      }
+    },
+    {
+      "from": "G1",
+      "to": "L1",
+      "label": "TRAINED_AT",
+      "properties": {
+        "Year": "AD 110"
+      }
+    },
+    {
+      "from": "G2",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {
+        "Mastery": "Master"
+      }
+    },
+    {
+      "from": "G2",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {
+        "Style": "Entanglement"
+      }
+    },
+    {
+      "from": "G2",
+      "to": "W4",
+      "label": "WIELDS",
+      "properties": {
+        "Secondary": "Primary Thrust"
+      }
+    },
+    {
+      "from": "G2",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {
+        "Tribe": "Cherusci"
+      }
+    },
+    {
+      "from": "G3",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {
+        "Mastery": "Veteran"
+      }
+    },
+    {
+      "from": "G3",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {
+        "Offense": "Close combat"
+      }
+    },
+    {
+      "from": "G3",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {
+        "Blade": "Steel"
+      }
+    },
+    {
+      "from": "G3",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {
+        "Citizenship": "Roman"
+      }
+    },
+    {
+      "from": "G4",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {
+        "Mastery": "Elite"
+      }
+    },
+    {
+      "from": "G4",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {
+        "Reach": "Long"
+      }
+    },
+    {
+      "from": "G4",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {
+        "Cavalry": "Numidian"
+      }
+    },
+    {
+      "from": "G5",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {
+        "Mastery": "Legend"
+      }
+    },
+    {
+      "from": "G5",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {
+        "Curve": "Flavian Cut"
+      }
+    },
+    {
+      "from": "G5",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {
+        "Heritage": "Germanic"
+      }
+    },
+    {
+      "from": "G6",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {
+        "Mastery": "Adept"
+      }
+    },
+    {
+      "from": "G6",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {
+        "Style": "Thracian"
+      }
+    },
+    {
+      "from": "G6",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {
+        "Province": "Gallia"
+      }
+    },
+    {
+      "from": "C2",
+      "to": "C6",
+      "label": "TRADITIONAL_RIVAL_OF",
+      "properties": {
+        "Era": "Classical Roman"
+      }
+    },
+    {
+      "from": "C3",
+      "to": "C5",
+      "label": "CLASSIC_MATCHUP_AGAINST",
+      "properties": {
+        "CrowdFavorite": "Very High"
+      }
+    },
+    {
+      "from": "L1",
+      "to": "A1",
+      "label": "FIGHTS_IN",
+      "properties": {
+        "DirectTunnel": "Via Underground Passage"
+      }
+    },
+    {
+      "from": "C1",
+      "to": "A1",
+      "label": "FEATURED_IN",
+      "properties": {
+        "OpeningMatch": true
+      }
+    }
+  ],
+  "count": 25
+}
