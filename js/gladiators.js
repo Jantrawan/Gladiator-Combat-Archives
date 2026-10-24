@@ -254,7 +254,7 @@ function renderTable() {
         <span style="font-weight: 500;">${g.age} ปี</span>
       </td>
       <td>
-        <span class="badge-tag">${g.origin}</span>
+        <span class="badge-tag highlight">${g.origin}</span>
       </td>
       <td>
         <span class="badge-tag highlight">${g.category}</span>

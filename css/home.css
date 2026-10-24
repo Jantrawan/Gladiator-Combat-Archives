@@ -49,6 +49,11 @@
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   color: var(--text-primary);
+  transition: color 0.2s ease-in-out; /* เพิ่มความนุ่มนวลเวลาเปลี่ยนสี */
+}
+
+.hero-title:hover {
+  color: #D4AF37; /* เปลี่ยนเป็นสีทองตอนชี้ */
 }
 
 .hero-title span {

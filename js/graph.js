@@ -7,7 +7,7 @@ let network = null;
 let graphData = null;
 
 const GROUP_COLORS = {
-  Gladiator: { background: '#e8e8e8', border: '#ffffff', font: { color: '#121212', face: 'Bai Jamjuree', bold: true } },
+  Gladiator: { background: '#c5c5c5', border: '#ffffff', font: { color: '#121212', face: 'Bai Jamjuree', bold: true } },
   Category: { background: '#85776d', border: '#a6a6a6', font: { color: '#ffffff', face: 'Bai Jamjuree' } },
   Weapon: { background: '#2e4053', border: '#a6a6a6', font: { color: '#ffffff', face: 'Bai Jamjuree' } },
   Origin: { background: '#5e4b42', border: '#a6a6a6', font: { color: '#ffffff', face: 'Bai Jamjuree' } },

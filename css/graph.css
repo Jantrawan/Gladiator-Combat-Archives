@@ -272,3 +272,17 @@
     height: auto;
   }
 }
+
+.long-container-box {
+  background: var(--bg-card);
+  border: 2px solid var(--border-stat);
+  border-radius: var(--radius-sm);
+  padding: 1.2rem 1.6rem;
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  box-shadow: var(--shadow-stat-card);
+}

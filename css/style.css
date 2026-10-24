@@ -27,9 +27,9 @@
   /* พื้นหลังเว็บไซต์: ปรับให้สว่างขึ้นจากเดิม (#1a1a1a) มาเป็น #272727 / #404040 */
   --bg-primary: #272727;
   --bg-secondary: #272727;
-  --bg-tertiary: #404040;
-  --bg-card: #404040;
-  --bg-card-hover: #535353;
+  --bg-tertiary: #3B3B3B;
+  --bg-card: #302F2F; /* แกก้สีกรอบตรงนี้จ้า */
+  --bg-card-hover: #2d2d2d;
   --bg-light: #404040;
   --bg-light-surface: #535353;
   
@@ -37,7 +37,7 @@
   --text-primary: #fafafa;
   --text-secondary: #d3d3d3;
   --text-muted: #a3a3a3;
-  --text-hover: #fafafa;
+  --text-hover: #D4AF37; /* สีทองอ่อน */
   
   /* กรอบและเส้นขอบ: สว่าง คมชัด */
   --border-light: rgba(255, 255, 255, 0.12);
@@ -57,10 +57,14 @@
   --btn-primary-active-bg: #a3a3a3;      /* คลิกค้างแล้วเข้มขึ้นอีก */
   --btn-primary-active-border: #727272;
 
+  /* เพิ่มสีทองสำหรับ Hover หัวข้อโดยเฉพาะ */
+  --accent-gold: #D4AF37;       /* หรือจะใช้ #C5A059 (สีทองโบราณแบบขรึมๆ เข้ากับธีมโรมัน) */
+  --text-hover-gold: #D4AF37;
+
   /* สีปุ่มรอง (Secondary Button) */
   --btn-secondary-bg: #404040;
   --btn-secondary-text: #fafafa;
-  --btn-secondary-border: #a3a3a3;
+  --btn-secondary-border: #727272;
   --btn-secondary-hover-bg: #272727;     /* ชี้แล้วเข้มขึ้น */
   --btn-secondary-hover-text: #ffffff;
   --btn-secondary-hover-border: #d3d3d3;
@@ -174,6 +178,11 @@ button, input, select, textarea {
   letter-spacing: -0.02em;
   line-height: 1.2;
   margin-bottom: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.section-title:hover {
+  color: #D4AF37; /* เปลี่ยนเป็นสีทองตอนชี้ */
 }
 
 .section-subtitle {
