@@ -1,7 +1,7 @@
 {
   "source": "gladiator_dataset",
   "status": "cached",
-  "cypher": "MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25",
+  "cypher": "MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 500",
   "nodes": [
     {
       "id": "G1",
@@ -202,6 +202,24 @@
       }
     },
     {
+      "id": "O5",
+      "label": "Thrace",
+      "group": "Origin",
+      "properties": {
+        "Region": "Balkans",
+        "Count": 1613
+      }
+    },
+    {
+      "id": "O6",
+      "label": "Greece",
+      "group": "Origin",
+      "properties": {
+        "Region": "Mediterranean",
+        "Count": 1600
+      }
+    },
+    {
       "id": "A1",
       "label": "Colosseum (Flavian)",
       "group": "Arena",
@@ -217,6 +235,1678 @@
       "properties": {
         "Location": "Rome",
         "Type": "Imperial Gladiatorial School"
+      }
+    },
+    {
+      "id": "G7",
+      "label": "Paconius Salvidienus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 3,
+        "Origin": "Numidia",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G8",
+      "label": "Cassius Nero",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 13,
+        "Losses": 8,
+        "Origin": "Greece",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G9",
+      "label": "Quintilianus Avidius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 2,
+        "Origin": "Rome",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G10",
+      "label": "Vespasian Candidus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 12,
+        "Losses": 3,
+        "Origin": "Thrace",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G11",
+      "label": "Sergius Mamilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 3,
+        "Origin": "Thrace",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G12",
+      "label": "Iuventius Ingenuus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 0,
+        "Origin": "Numidia",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G13",
+      "label": "Marcellus Pompeius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 15,
+        "Losses": 2,
+        "Origin": "Gaul",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G14",
+      "label": "Quintilianus Primitivus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 4,
+        "Losses": 0,
+        "Origin": "Numidia",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G15",
+      "label": "Manilius Publius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 0,
+        "Origin": "Gaul",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G16",
+      "label": "Domitius Bonifacius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 4,
+        "Origin": "Rome",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G17",
+      "label": "Servius Sergian",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 2,
+        "Origin": "Rome",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G18",
+      "label": "Celsus Cordius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 11,
+        "Losses": 3,
+        "Origin": "Numidia",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G19",
+      "label": "Minicius Cominius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 12,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G20",
+      "label": "Nerva Vincentius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 13,
+        "Losses": 6,
+        "Origin": "Gaul",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G21",
+      "label": "Ogulnius Justus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 0,
+        "Origin": "Germania",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G22",
+      "label": "Pupius Fannius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 1,
+        "Origin": "Greece",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G23",
+      "label": "Brennus Faustus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 1,
+        "Origin": "Germania",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G24",
+      "label": "Ninnius Marcius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 2,
+        "Origin": "Rome",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G25",
+      "label": "Faustus Horatius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 2,
+        "Losses": 0,
+        "Origin": "Germania",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G26",
+      "label": "Messalla Felix",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 1,
+        "Origin": "Greece",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G27",
+      "label": "Laetorius Caedicius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 13,
+        "Losses": 5,
+        "Origin": "Greece",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G28",
+      "label": "Gabinius Acilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 2,
+        "Origin": "Numidia",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G29",
+      "label": "Amulius Caelius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 0,
+        "Origin": "Rome",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G30",
+      "label": "Caesennius Domitian",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G31",
+      "label": "Cornutus Avidius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 4,
+        "Origin": "Thrace",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G32",
+      "label": "Rabirius Secundinius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 1,
+        "Origin": "Rome",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G33",
+      "label": "Cornificius Laurentius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 2,
+        "Origin": "Germania",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G34",
+      "label": "Vitalis Didius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 3,
+        "Losses": 0,
+        "Origin": "Numidia",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G35",
+      "label": "Minicius Mamilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 23,
+        "Losses": 8,
+        "Origin": "Rome",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G36",
+      "label": "Plinius Marius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 2,
+        "Origin": "Thrace",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G37",
+      "label": "Caninius Rufinus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 1,
+        "Origin": "Greece",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G38",
+      "label": "Nerva Caelius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G39",
+      "label": "Maximian Considius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 17,
+        "Losses": 3,
+        "Origin": "Greece",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G40",
+      "label": "Mamilius Catius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 12,
+        "Losses": 2,
+        "Origin": "Rome",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G41",
+      "label": "Oppius Egnatuleius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 3,
+        "Origin": "Germania",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G42",
+      "label": "Cordius Vibius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 0,
+        "Origin": "Gaul",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G43",
+      "label": "Pompeius Valens",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 2,
+        "Losses": 1,
+        "Origin": "Thrace",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G44",
+      "label": "Donatus Fabrinius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 5,
+        "Origin": "Thrace",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G45",
+      "label": "Clodius Aemilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 3,
+        "Origin": "Thrace",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G46",
+      "label": "Severus Semellius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 13,
+        "Losses": 4,
+        "Origin": "Numidia",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G47",
+      "label": "Blaesus Terentius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 2,
+        "Origin": "Gaul",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G48",
+      "label": "Acilius Afranius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 4,
+        "Origin": "Gaul",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G49",
+      "label": "Valerius Minicius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 4,
+        "Origin": "Rome",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G50",
+      "label": "Clodius Gordian",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 0,
+        "Origin": "Numidia",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G51",
+      "label": "Postumius Lentulus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 3,
+        "Origin": "Gaul",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G52",
+      "label": "Sentius Fundanus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 2,
+        "Origin": "Germania",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G53",
+      "label": "Antonius Caninius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 4,
+        "Losses": 0,
+        "Origin": "Thrace",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G54",
+      "label": "Ogulnius Damasus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 4,
+        "Losses": 0,
+        "Origin": "Greece",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G55",
+      "label": "Octavenus Genucius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 2,
+        "Origin": "Rome",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G56",
+      "label": "Sestius Latinius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 1,
+        "Origin": "Thrace",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G57",
+      "label": "Petilius Antonius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 3,
+        "Losses": 0,
+        "Origin": "Gaul",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G58",
+      "label": "Marian Seccius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 3,
+        "Origin": "Germania",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G59",
+      "label": "Persius Baebius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 17,
+        "Losses": 1,
+        "Origin": "Rome",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G60",
+      "label": "Silius Silanus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 0,
+        "Origin": "Greece",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G61",
+      "label": "Saturninus Quinctilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 4,
+        "Origin": "Thrace",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G62",
+      "label": "Pacilius Cominius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 12,
+        "Losses": 4,
+        "Origin": "Greece",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G63",
+      "label": "Statilius Nasidius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 12,
+        "Losses": 1,
+        "Origin": "Thrace",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G64",
+      "label": "Pasidienus Maxentius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 2,
+        "Losses": 0,
+        "Origin": "Gaul",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G65",
+      "label": "Gratian Vibius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 0,
+        "Origin": "Greece",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G66",
+      "label": "Considius Rebilus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 1,
+        "Losses": 0,
+        "Origin": "Rome",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G67",
+      "label": "Sidonius Brennus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 2,
+        "Origin": "Germania",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G68",
+      "label": "Lucius Duronius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 1,
+        "Origin": "Thrace",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G69",
+      "label": "Amulius Burrienus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 3,
+        "Origin": "Greece",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G70",
+      "label": "Betilienus Appius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 4,
+        "Losses": 2,
+        "Origin": "Greece",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G71",
+      "label": "Severian Herennius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 14,
+        "Losses": 5,
+        "Origin": "Greece",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G72",
+      "label": "Silius Caninius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 2,
+        "Origin": "Germania",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G73",
+      "label": "Aelius Sempronius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 3,
+        "Origin": "Greece",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G74",
+      "label": "Sornatius Constantinus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 11,
+        "Losses": 2,
+        "Origin": "Numidia",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G75",
+      "label": "Rebilus Persius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 1,
+        "Origin": "Germania",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G76",
+      "label": "Balbinus Furius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 0,
+        "Origin": "Numidia",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G77",
+      "label": "Porcius Tarquinius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 3,
+        "Origin": "Gaul",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G78",
+      "label": "Damasus Ogulnius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 16,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G79",
+      "label": "Salvidienus Fannius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 2,
+        "Origin": "Thrace",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G80",
+      "label": "Maecilius Geminius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 1,
+        "Origin": "Thrace",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G81",
+      "label": "Laetorius Musonius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 4,
+        "Losses": 1,
+        "Origin": "Germania",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G82",
+      "label": "Foslius Blasius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 5,
+        "Origin": "Thrace",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G83",
+      "label": "Aquillius Spurius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 2,
+        "Losses": 0,
+        "Origin": "Greece",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G84",
+      "label": "Constantinus Fabianus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 18,
+        "Losses": 1,
+        "Origin": "Germania",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G85",
+      "label": "Papirius Numerius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 3,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G86",
+      "label": "Semellius Catius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 2,
+        "Origin": "Rome",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G87",
+      "label": "Varro Musonius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 3,
+        "Losses": 1,
+        "Origin": "Greece",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G88",
+      "label": "Silanus Domitius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G89",
+      "label": "Iunius Faustus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 0,
+        "Origin": "Greece",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G90",
+      "label": "Opimius Laronius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 1,
+        "Origin": "Germania",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G91",
+      "label": "Pontidius Mamilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 2,
+        "Origin": "Rome",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G92",
+      "label": "Urbicus Opellius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 2,
+        "Origin": "Greece",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G93",
+      "label": "Sabucius Tiberius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 5,
+        "Origin": "Numidia",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G94",
+      "label": "Cosconius Gabinius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 1,
+        "Origin": "Thrace",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G95",
+      "label": "Plinius Salvidienus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 4,
+        "Origin": "Greece",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G96",
+      "label": "Paulinus Publius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 3,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G97",
+      "label": "Salvian Nerva",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 3,
+        "Losses": 0,
+        "Origin": "Gaul",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G98",
+      "label": "Valentinian Seccius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 3,
+        "Losses": 0,
+        "Origin": "Greece",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G99",
+      "label": "Constantinus Sabucius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 3,
+        "Origin": "Rome",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G100",
+      "label": "Atilius Albinius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 3,
+        "Origin": "Greece",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G101",
+      "label": "Silanus Baebius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G102",
+      "label": "Novellius Servilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G103",
+      "label": "Salvius Cinna",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 13,
+        "Losses": 6,
+        "Origin": "Rome",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G104",
+      "label": "Laelius Memmius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 3,
+        "Losses": 0,
+        "Origin": "Greece",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G105",
+      "label": "Cassius Bruttius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 2,
+        "Losses": 0,
+        "Origin": "Germania",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G106",
+      "label": "Valens Fabianus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 14,
+        "Losses": 7,
+        "Origin": "Gaul",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G107",
+      "label": "Catilius Cyprian",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 0,
+        "Origin": "Greece",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G108",
+      "label": "Ennius Petilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 4,
+        "Origin": "Germania",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G109",
+      "label": "Saturninus Aelius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 1,
+        "Origin": "Rome",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G110",
+      "label": "Scribonius Lucretius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 3,
+        "Origin": "Thrace",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G111",
+      "label": "Fundanus Mescinius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 4,
+        "Losses": 0,
+        "Origin": "Numidia",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G112",
+      "label": "Sextus Maecilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 2,
+        "Origin": "Rome",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G113",
+      "label": "Norbanus Donatus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 4,
+        "Origin": "Germania",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G114",
+      "label": "Petreius Sergius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 3,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G115",
+      "label": "Hilarianus Cicereius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 1,
+        "Origin": "Rome",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G116",
+      "label": "Sedatius Marcus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 1,
+        "Origin": "Rome",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G117",
+      "label": "Faustus Publius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 4,
+        "Losses": 1,
+        "Origin": "Thrace",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G118",
+      "label": "Brennus Blossius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 4,
+        "Losses": 0,
+        "Origin": "Rome",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G119",
+      "label": "Cilnius Primitivus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 4,
+        "Origin": "Gaul",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G120",
+      "label": "Quintus Dacian",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 4,
+        "Origin": "Gaul",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G121",
+      "label": "Florian Fannius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 4,
+        "Losses": 0,
+        "Origin": "Greece",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G122",
+      "label": "Laronius Regulus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 12,
+        "Losses": 3,
+        "Origin": "Thrace",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G123",
+      "label": "Iulius Sidonius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G124",
+      "label": "Sepullius Pettius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 1,
+        "Origin": "Germania",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G125",
+      "label": "Aulus Maecilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 1,
+        "Origin": "Germania",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G126",
+      "label": "Seneca Eborius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 1,
+        "Origin": "Numidia",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G127",
+      "label": "Cloelius Poppaedius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 13,
+        "Losses": 2,
+        "Origin": "Thrace",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G128",
+      "label": "Salinator Salvius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 2,
+        "Origin": "Gaul",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G129",
+      "label": "Pacilius Numicius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 2,
+        "Origin": "Thrace",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G130",
+      "label": "Maximian Cassius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 1,
+        "Origin": "Thrace",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G131",
+      "label": "Octavenus Dacian",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 2,
+        "Losses": 0,
+        "Origin": "Greece",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G132",
+      "label": "Pius Zeno",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 2,
+        "Origin": "Rome",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G133",
+      "label": "Lamponius Atilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 7,
+        "Losses": 5,
+        "Origin": "Thrace",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G134",
+      "label": "Blaesus Crispinus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 2,
+        "Origin": "Rome",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G135",
+      "label": "Publicius Orbilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 1,
+        "Origin": "Numidia",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G136",
+      "label": "Furius Flavius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 1,
+        "Origin": "Rome",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G137",
+      "label": "Livius Albinus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 12,
+        "Losses": 4,
+        "Origin": "Rome",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G138",
+      "label": "Munatius Mallius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G139",
+      "label": "Valentinian Felix",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 3,
+        "Losses": 0,
+        "Origin": "Germania",
+        "Category": "Retiarius"
+      }
+    },
+    {
+      "id": "G140",
+      "label": "Severian Mallius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 15,
+        "Losses": 3,
+        "Origin": "Numidia",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G141",
+      "label": "Maxentius Semellius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 0,
+        "Origin": "Gaul",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G142",
+      "label": "Nasidius Nigidius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 2,
+        "Origin": "Germania",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G143",
+      "label": "Tiberius Marian",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 1,
+        "Origin": "Germania",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G144",
+      "label": "Decentius Hostilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 14,
+        "Losses": 4,
+        "Origin": "Greece",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G145",
+      "label": "Aemilius Quinctilius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 1,
+        "Origin": "Germania",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G146",
+      "label": "Hilarianus Ravillius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 1,
+        "Origin": "Germania",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G147",
+      "label": "Cassius Cornelius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 2,
+        "Origin": "Thrace",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G148",
+      "label": "Sulpicius Gabinius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 8,
+        "Losses": 1,
+        "Origin": "Greece",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G149",
+      "label": "Gallus Paelignus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 10,
+        "Losses": 2,
+        "Origin": "Rome",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G150",
+      "label": "Bonifacius Persius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 12,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G151",
+      "label": "Sidonius Sittius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 0,
+        "Origin": "Germania",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G152",
+      "label": "Sergius Rullianus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 12,
+        "Losses": 1,
+        "Origin": "Thrace",
+        "Category": "Murmillo"
+      }
+    },
+    {
+      "id": "G153",
+      "label": "Lacerius Considius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 4,
+        "Origin": "Greece",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G154",
+      "label": "Paternus Fabrinius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 11,
+        "Losses": 5,
+        "Origin": "Thrace",
+        "Category": "Thraex"
+      }
+    },
+    {
+      "id": "G155",
+      "label": "Burrienus Germanicus",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 9,
+        "Losses": 1,
+        "Origin": "Greece",
+        "Category": "Provocator"
+      }
+    },
+    {
+      "id": "G156",
+      "label": "Mucius Iuventius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 6,
+        "Losses": 1,
+        "Origin": "Thrace",
+        "Category": "Hoplomachus"
+      }
+    },
+    {
+      "id": "G157",
+      "label": "Pomponius Junius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 5,
+        "Losses": 1,
+        "Origin": "Gaul",
+        "Category": "Secutor"
+      }
+    },
+    {
+      "id": "G158",
+      "label": "Salinator Rufrius",
+      "group": "Gladiator",
+      "properties": {
+        "Wins": 13,
+        "Losses": 1,
+        "Origin": "Germania",
+        "Category": "Secutor"
       }
     }
   ],
@@ -420,7 +2110,2859 @@
       "properties": {
         "OpeningMatch": true
       }
+    },
+    {
+      "from": "W2",
+      "to": "C3",
+      "label": "STANDARD_EQUIPMENT_FOR",
+      "properties": {
+        "Shield": "Scutum"
+      }
+    },
+    {
+      "from": "G1",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G1",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G1",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G2",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G2",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G2",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G3",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G3",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G3",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G4",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G4",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G4",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G5",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G5",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G5",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G6",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G6",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G6",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G7",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G7",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G7",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G8",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G8",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G8",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G9",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G9",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G9",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G10",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G10",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G10",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G11",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G11",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G11",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G12",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G12",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G12",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G13",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G13",
+      "to": "W4",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G13",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G14",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G14",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G14",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G15",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G15",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G15",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G16",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G16",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G16",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G17",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G17",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G17",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G18",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G18",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G18",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G19",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G19",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G19",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G20",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G20",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G20",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G21",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G21",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G21",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G22",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G22",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G22",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G23",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G23",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G23",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G24",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G24",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G24",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G25",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G25",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G25",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G26",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G26",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G26",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G27",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G27",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G27",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G28",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G28",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G28",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G29",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G29",
+      "to": "W4",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G29",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G30",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G30",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G30",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G31",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G31",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G31",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G32",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G32",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G32",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G33",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G33",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G33",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G34",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G34",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G34",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G35",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G35",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G35",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G36",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G36",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G36",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G37",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G37",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G37",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G38",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G38",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G38",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G39",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G39",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G39",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G40",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G40",
+      "to": "W4",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G40",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G41",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G41",
+      "to": "W4",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G41",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G42",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G42",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G42",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G43",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G43",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G43",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G44",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G44",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G44",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G45",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G45",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G45",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G46",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G46",
+      "to": "W4",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G46",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G47",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G47",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G47",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G48",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G48",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G48",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G49",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G49",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G49",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G50",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G50",
+      "to": "W4",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G50",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G51",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G51",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G51",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G52",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G52",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G52",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G53",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G53",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G53",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G54",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G54",
+      "to": "W4",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G54",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G55",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G55",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G55",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G56",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G56",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G56",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G57",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G57",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G57",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G58",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G58",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G58",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G59",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G59",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G59",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G60",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G60",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G60",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G61",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G61",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G61",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G62",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G62",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G62",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G63",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G63",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G63",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G64",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G64",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G64",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G65",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G65",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G65",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G66",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G66",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G66",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G67",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G67",
+      "to": "W4",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G67",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G68",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G68",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G68",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G69",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G69",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G69",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G70",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G70",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G70",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G71",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G71",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G71",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G72",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G72",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G72",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G73",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G73",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G73",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G74",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G74",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G74",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G75",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G75",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G75",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G76",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G76",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G76",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G77",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G77",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G77",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G78",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G78",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G78",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G79",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G79",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G79",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G80",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G80",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G80",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G81",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G81",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G81",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G82",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G82",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G82",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G83",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G83",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G83",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G84",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G84",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G84",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G85",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G85",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G85",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G86",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G86",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G86",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G87",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G87",
+      "to": "W4",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G87",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G88",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G88",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G88",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G89",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G89",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G89",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G90",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G90",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G90",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G91",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G91",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G91",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G92",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G92",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G92",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G93",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G93",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G93",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G94",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G94",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G94",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G95",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G95",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G95",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G96",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G96",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G96",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G97",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G97",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G97",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G98",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G98",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G98",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G99",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G99",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G99",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G100",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G100",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G100",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G101",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G101",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G101",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G102",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G102",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G102",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G103",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G103",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G103",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G104",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G104",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G104",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G105",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G105",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G105",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G106",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G106",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G106",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G107",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G107",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G107",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G108",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G108",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G108",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G109",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G109",
+      "to": "W4",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G109",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G110",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G110",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G110",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G111",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G111",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G111",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G112",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G112",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G112",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G113",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G113",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G113",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G114",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G114",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G114",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G115",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G115",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G115",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G116",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G116",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G116",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G117",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G117",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G117",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G118",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G118",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G118",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G119",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G119",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G119",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G120",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G120",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G120",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G121",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G121",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G121",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G122",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G122",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G122",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G123",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G123",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G123",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G124",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G124",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G124",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G125",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G125",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G125",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G126",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G126",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G126",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G127",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G127",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G127",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G128",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G128",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G128",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G129",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G129",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G129",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G130",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G130",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G130",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G131",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G131",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G131",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G132",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G132",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G132",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G133",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G133",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G133",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G134",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G134",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G134",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G135",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G135",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G135",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G136",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G136",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G136",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G137",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G137",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G137",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G138",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G138",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G138",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G139",
+      "to": "C2",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G139",
+      "to": "W5",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G139",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G140",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G140",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G140",
+      "to": "O3",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G141",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G141",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G141",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G142",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G142",
+      "to": "W3",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G142",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G143",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G143",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G143",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G144",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G144",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G144",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G145",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G145",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G145",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G146",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G146",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G146",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G147",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G147",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G147",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G148",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G148",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G148",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G149",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G149",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G149",
+      "to": "O1",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G150",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G150",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G150",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G151",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G151",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G151",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G152",
+      "to": "C3",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G152",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G152",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G153",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G153",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G153",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G154",
+      "to": "C5",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G154",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G154",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G155",
+      "to": "C1",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G155",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G155",
+      "to": "O6",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G156",
+      "to": "C4",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G156",
+      "to": "W6",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G156",
+      "to": "O5",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G157",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G157",
+      "to": "W2",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G157",
+      "to": "O4",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
+    },
+    {
+      "from": "G158",
+      "to": "C6",
+      "label": "PRACTICES_STYLE",
+      "properties": {}
+    },
+    {
+      "from": "G158",
+      "to": "W1",
+      "label": "WIELDS",
+      "properties": {}
+    },
+    {
+      "from": "G158",
+      "to": "O2",
+      "label": "ORIGINATED_FROM",
+      "properties": {}
     }
   ],
-  "count": 25
+  "count": 500
 }

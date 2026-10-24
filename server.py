@@ -42,12 +42,12 @@ class GladiatorHandler(http.server.SimpleHTTPRequestHandler):
             uri = params.get("uri", ["neo4j+s://6aa638c7.databases.neo4j.io"])[0]
             user = params.get("user", ["neo4j"])[0]
             password = params.get("password", ["9y0bZ4bLP4w-hAFPWE8-cATtHKImvRO25rv1IRT_fbY"])[0]
-            cypher = params.get("cypher", ["MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25"])[0]
+            cypher = params.get("cypher", ["MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 500"])[0]
             
             from neo4j_connector import fetch_from_neo4j, generate_dataset_graph
             result = fetch_from_neo4j(uri=uri, user=user, password=password, cypher=cypher)
             if not result:
-                result = generate_dataset_graph(limit=25)
+                result = generate_dataset_graph(limit=500)
                 result["notice"] = "Could not authenticate to Neo4j instance with current credentials. Loaded local schema dataset."
             
             self.send_response(200)

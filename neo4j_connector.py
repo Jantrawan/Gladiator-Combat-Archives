@@ -4,7 +4,7 @@ Connects to Neo4j Aura using credentials specified in requirements:
 - URI: neo4j+s://6aa638c7.databases.neo4j.io
 - User: neo4j (or 6aa638c7)
 - Password: 9y0bZ4bLP4w-hAFPWE8-cATtHKImvRO25rv1IRT_fbY
-- Cypher: MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25
+- Cypher: MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 500
 """
 
 import json
@@ -15,7 +15,7 @@ DEFAULT_URI = "neo4j+s://6aa638c7.databases.neo4j.io"
 DEFAULT_USER = "neo4j"
 ALT_USER = "6aa638c7"
 DEFAULT_PASSWORD = "9y0bZ4bLP4w-hAFPWE8-cATtHKImvRO25rv1IRT_fbY"
-DEFAULT_CYPHER = "MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25"
+DEFAULT_CYPHER = "MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 500"
 
 def fetch_from_neo4j(uri=DEFAULT_URI, user=DEFAULT_USER, password=DEFAULT_PASSWORD, cypher=DEFAULT_CYPHER):
     try:
@@ -93,11 +93,11 @@ def fetch_from_neo4j(uri=DEFAULT_URI, user=DEFAULT_USER, password=DEFAULT_PASSWO
 
     return None
 
-def generate_dataset_graph(limit=25):
+def generate_dataset_graph(limit=500):
     """
     Generates an authentic knowledge graph based on gladiator dataset
     linking Gladiators, Categories, Weapons, Origins, and Patrons
-    matching the Cypher schema MATCH (n)-[r]->(m) LIMIT 25
+    matching the Cypher schema MATCH (n)-[r]->(m) LIMIT 500
     """
     print("[Graph] Building Knowledge Graph from dataset...")
     
@@ -133,6 +133,7 @@ def generate_dataset_graph(limit=25):
         {"id": "O3", "label": "Numidia", "group": "Origin", "properties": {"Region": "North Africa", "Count": 1689}},
         {"id": "O4", "label": "Gaul", "group": "Origin", "properties": {"Region": "Western Europe", "Count": 1633}},
         {"id": "O5", "label": "Thrace", "group": "Origin", "properties": {"Region": "Balkans", "Count": 1613}},
+        {"id": "O6", "label": "Greece", "group": "Origin", "properties": {"Region": "Mediterranean", "Count": 1600}},
         
         # Ludus / Patrons / Arena
         {"id": "A1", "label": "Colosseum (Flavian)", "group": "Arena", "properties": {"Location": "Rome", "Capacity": 50000}},
@@ -181,7 +182,52 @@ def generate_dataset_graph(limit=25):
         {"from": "W2", "to": "C3", "label": "STANDARD_EQUIPMENT_FOR", "properties": {"Shield": "Scutum"}}
     ]
 
-    # Exactly 25 relationships as queried by LIMIT 25
+    # If requested limit is larger than preset edges (e.g. LIMIT 500), augment from dataset
+    if len(edges) < limit:
+        data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "gladiators.json")
+        if os.path.exists(data_path):
+            try:
+                with open(data_path, "r", encoding="utf-8") as f:
+                    gladiators_data = json.load(f)
+
+                cat_map = {"Provocator": "C1", "Retiarius": "C2", "Murmillo": "C3", "Hoplomachus": "C4", "Thraex": "C5", "Secutor": "C6"}
+                wep_map = {"Dagger": "W1", "Gladius (Sword)": "W2", "Sica": "W3", "Sica (Curved Sword)": "W3", "Trident": "W4", "Net": "W5", "Spear": "W6"}
+                ori_map = {"Rome": "O1", "Germania": "O2", "Numidia": "O3", "Gaul": "O4", "Thrace": "O5", "Greece": "O6"}
+
+                existing_node_ids = {n["id"] for n in nodes}
+                for item in gladiators_data:
+                    if len(edges) >= limit:
+                        break
+                    gid = f"G{item['id']}"
+                    if gid not in existing_node_ids:
+                        nodes.append({
+                            "id": gid,
+                            "label": item.get("name", f"Gladiator {gid}"),
+                            "group": "Gladiator",
+                            "properties": {
+                                "Wins": item.get("wins", 0),
+                                "Losses": item.get("losses", 0),
+                                "Origin": item.get("origin", "Unknown"),
+                                "Category": item.get("category", "Unknown")
+                            }
+                        })
+                        existing_node_ids.add(gid)
+
+                    c_id = cat_map.get(item.get("category"))
+                    if c_id and len(edges) < limit:
+                        edges.append({"from": gid, "to": c_id, "label": "PRACTICES_STYLE", "properties": {}})
+
+                    w_id = wep_map.get(item.get("weapon"))
+                    if w_id and len(edges) < limit:
+                        edges.append({"from": gid, "to": w_id, "label": "WIELDS", "properties": {}})
+
+                    o_id = ori_map.get(item.get("origin"))
+                    if o_id and len(edges) < limit:
+                        edges.append({"from": gid, "to": o_id, "label": "ORIGINATED_FROM", "properties": {}})
+            except Exception as err:
+                print(f"[Graph] Notice while augmenting graph: {err}")
+
+    # Exactly limit relationships as queried by LIMIT 500
     limited_edges = edges[:limit]
     
     # Collect only active node ids
@@ -208,7 +254,7 @@ def update_graph_data():
         graph_data = live_data
     else:
         print("[Neo4j] Using simulated authentic graph matching Neo4j schema & query requirements.")
-        graph_data = generate_dataset_graph(limit=25)
+        graph_data = generate_dataset_graph(limit=500)
         
     with open("data/graph_data.json", "w", encoding="utf-8") as f:
         json.dump(graph_data, f, ensure_ascii=False, indent=2)

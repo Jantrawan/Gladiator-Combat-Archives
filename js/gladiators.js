@@ -257,6 +257,9 @@ function renderTable() {
         <span class="badge-tag">${g.origin}</span>
       </td>
       <td>
+        <span class="badge-tag highlight">${g.category}</span>
+      </td>
+      <td>
         <div class="record-pill">
           <span class="win-val">${g.wins}W</span>
           <span class="sep">/</span>

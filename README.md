@@ -81,7 +81,7 @@ python server.py
 * เชื่อมโยงกับฐานข้อมูล **Neo4j** ด้วย **Python (`neo4j_connector.py`)**
 * รันคำสั่ง Cypher:
   ```cypher
-  MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25
+  MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 500
   ```
 * แสดงผลเป็น Interactive Graph พร้อมระบบฟิสิกส์ ซูมเข้า-ออก ปรับมุมมองอัตโนมัติ
 * มี Legend แยกประเภทสีของโหนด: Gladiator, Category, Weapon, Origin, Arena/School

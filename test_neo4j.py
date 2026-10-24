@@ -12,7 +12,7 @@ candidates = [
     ("bolt://localhost:7687", "6aa638c7"),
 ]
 
-query = "MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25"
+query = "MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 500"
 
 found = False
 for uri, user in candidates:

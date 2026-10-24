@@ -70,7 +70,7 @@
       <!-- Cypher Query Display -->
       <div class="cypher-badge">
         <i class="fi fi-rr-terminal"></i>
-        <span>Cypher Query: <strong>MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25</strong></span>
+        <span>Cypher Query: <strong>MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 500</strong></span>
       </div>
 
       <!-- Neo4j Connection Bar -->
@@ -83,7 +83,7 @@
           <div class="param-pill">User: <code>6aa638c7</code></div>
           <div class="param-pill">Host: <code>6aa638c7.databases.neo4j.io</code></div>
           <div class="param-pill">Total Nodes: <strong id="stat-node-count" style="color: #fff;">0</strong></div>
-          <div class="param-pill">Total Relationships: <strong id="stat-edge-count" style="color: #fff;">25</strong></div>
+          <div class="param-pill">Total Relationships: <strong id="stat-edge-count" style="color: #fff;">500</strong></div>
         </div>
 
         <div class="neo4j-actions">
@@ -154,21 +154,6 @@
             </div>
           </div>
 
-          <!-- Python Connector Snippet -->
-          <div style="margin-top: 2rem; border-top: 1px solid var(--border-light); padding-top: 1.2rem;">
-            <div class="museum-label" style="font-size: 0.68rem;">PYTHON NEO4J BACKEND SCRIPT</div>
-            <div class="code-preview-box">
-from neo4j import GraphDatabase
-
-uri = "neo4j+s://6aa638c7.databases.neo4j.io"
-auth = ("6aa638c7", "9y0bZ4bLP4w-hAFPWE8-cATtHKImvRO25rv1IRT_fbY")
-cypher = "MATCH (n)-[r]->(m) RETURN n, r, m LIMIT 25"
-
-driver = GraphDatabase.driver(uri, auth=auth)
-with driver.session() as s:
-    result = s.run(cypher)
-            </div>
-          </div>
         </div>
       </div>
     </div>
